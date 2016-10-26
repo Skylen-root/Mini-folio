@@ -117,7 +117,7 @@ a:hover {
 }
 
 .post {
-	padding: 8px;
+	padding: 8px 12px;
 	border-top: 4px solid orange;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
 	margin-bottom: 30px;
@@ -129,6 +129,16 @@ a:hover {
 
 .post a:hover {
 	text-decoration: none;
+}
+
+.post-meta {
+	margin-bottom: 10px;
+}
+
+.readmore {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .sidebar-item {
@@ -193,7 +203,11 @@ footer p {
 	padding: 15px 0;
 }
 
-footer a {
+body footer a {
+	color: #fff !important;
+}
+
+footer .f_button {
 	color: #fff !important;
 	background-color: orange !important;
 	border-color: #fff !important;
