@@ -14,11 +14,14 @@ $(document).ready(function() {
 		if ($(".top_menu").is(":visible")) {
 			$(".top_menu").fadeOut(600);
 		}
-
-
 		else {
 		$(".top_menu").fadeIn(600);
 		};
+	});
+
+	$(".top_menu a").click(function(){
+		$(".top_menu").fadeOut(600);
+		$(".sandwich").toggleClass("active");
 	});
 //
 
