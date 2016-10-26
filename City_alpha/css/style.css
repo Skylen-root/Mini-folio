@@ -1,0 +1,115 @@
+body {
+	background-color: #d4e3ee;
+}
+
+header {
+	position: relative;
+}
+
+header h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+header p {
+	font-size: 14px;
+}
+
+header h3,p {
+	margin-top: 0;
+}
+
+.top_news {
+	height: 115px;
+	width: 414px;
+	border-left: 1px solid rgba(230,239,246,0.7);
+	padding-left: 37px;
+	color: #fff;
+	margin-bottom: 28px;
+	margin-top: 47px;
+	padding-top: 30px;
+}
+
+.search {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 285px;
+	padding-top: 35px;
+	height: 115px;
+	border-left: 1px solid rgba(230,239,246,0.7);
+	padding-left: 37px;
+}
+
+.search_form {
+	width: 175px;
+	height: 29px;
+	background-color: rgba(255,255,255,0.3);
+	vertical-align: middle;
+}
+
+.search button {
+	background: red none repeat scroll 0 0;
+	border: 1px solid;
+	border-right: none;
+	border-left: none;
+	border-top: rgba(255,255,255,0.3);
+	border-top: rgba(255,255,255,0.7);
+	font-family: inherit;
+	font-size: inherit;
+	height: 29px;
+	line-height: inherit;
+	vertical-align: middle;
+	width: 29px;
+	background: linear-gradient(to bottom, #6d0019 0%,#8f0222 62%,#a90329 100%);
+}
+
+nav {
+	background-color: #174764;
+	padding-left: 15px;
+	padding-top: 18px;
+	height: 75px;
+	border-top: 2px solid rgba(75,204,234,0.8);
+	border-bottom: 2px solid rgba(4,24,49,0.8);
+	background: -webkit-linear-gradient(top left, #7db9e8 0%, #1c5979 33%, #2989d8 66%, #1e5799 100%);
+	background: -o-linear-gradient(top left, #7db9e8 0%, #1c5979 33%, #2989d8 66%, #1e5799 100%);
+	background: linear-gradient(to bottom right, #7db9e8 0%, #1c5979 33%, #2989d8 66%, #1e5799 100%);
+}
+
+nav ul li {
+	list-style-type: none;
+	float: left;
+}
+
+nav ul {
+	padding: 0;
+}
+
+nav ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border-left: 1px solid rgba(74,203,232,0.7);
+	border-right: 1px solid rgba(2,32,85,0.7);
+	line-height: 37px;
+	padding-right: 25px;
+	padding-left: 25px;
+	font-size: 14px;
+}
+
+nav ul li:last-child a{
+	border-right: none;
+}
+
+nav ul li:first-child a{
+	border-left: none;
+}
+
+nav:after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
