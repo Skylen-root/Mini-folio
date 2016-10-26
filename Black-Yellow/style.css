@@ -1,0 +1,349 @@
+﻿/*
+Theme Name: Black-Yello
+Theme URI: https://wordpress.org/themes
+Author: the Volodymyr Lenskiy
+Author URI: https://
+Description: First theme for Wordpress.
+Version: 0.1
+License: None
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, gray, white, yellow, dark, light, two-columns, right-sidebar
+Text Domain: blackyellow
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-size: 14px;
+	font-family: "Open Sans",sans-serif;
+}
+
+a {
+	color: #000;
+	transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: orange;
+	transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+}
+
+.header {
+	border: 1px solid transparent;
+	padding: 24px 0 24px 0;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.logo {
+	margin-bottom: 15px;
+}
+
+.logo a {
+	padding-left: 11px;
+	font-size: 36px;
+	font-family: Courgette,"Comic Sans MS",cursive,sans-serif;
+	transition: color 0.2s linear 0s;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.logo a:hover {
+	color: #111;
+	text-shadow: 0 0 1px orange;
+	transition: color 0.2s linear 0s;
+	text-decoration: none;
+}
+/*NAVIGATION*/
+.menu-item a {
+	text-transform: uppercase;
+	transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.navbar-nav > li a:hover {
+	background: orange;
+	color: #fff;
+	//box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+}
+
+.navy-inactive {
+	color: #000;
+}
+
+.current-menu-item a{
+	background-color: #000;
+	//box-shadow: 3px 3px 0 rgba(201, 201, 201, 1);
+	color: #fff;
+}
+
+.sub-menu li {
+	list-style: none;
+}
+
+.sub-menu li {
+	border-bottom: 1px solid #111;
+}
+
+.sub-menu li a {
+	background-color: #c4c4c4;
+	display: block;
+	text-transform: uppercase;
+	transition: background-color 0.2s linear 0s, color 0.2s linear 0s;
+	margin-left: 0px;
+	text-transform: uppercase;
+	padding: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	line-height: 20px;
+}
+
+.sub-menu li:last-child {
+	border: none;
+}
+
+.sub-menu {
+	margin-left: 5px;
+	background-color: #c4c4c4;
+	padding-left: 0px;
+	display: none;
+	position: absolute;
+	top: 50px;
+	z-index: 100;
+}
+/*
+.active .sub-menu {
+	position: absolute;
+	top: 50px;
+	z-index: 100;
+}
+*/
+.menu-item-has-children > a:after {
+	content: ' ';
+	border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px dashed;
+    display: inline-block;
+    height: 0;
+    margin-left: 3px;
+    vertical-align: middle;
+    width: 0;
+}
+
+#menu-menu-1 li {
+	position: static !important;
+}
+
+#menu-menu-1 > li > ul {
+	position: absolute;
+	display: none;
+	margin-left: 5px;
+}
+
+#menu-menu-1 li > .sub-menu > li > ul{
+	position: absolute;
+	left: 100%;
+	display: none;
+	margin-left: 0px;
+}
+
+/*END NAV*/
+
+.top-wrap {
+	height: 114px;
+	background: #f5f5f5 none repeat scroll 0 0;
+    border-bottom: 3px solid #efefef;
+    position: relative;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.top-wrap h2 {
+	font-size: 28px;
+	border-bottom: 3px solid orange;
+	display: inline-block;
+	
+	padding: 30px 0;
+
+}
+
+.breadcrumb {
+	float: right;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	display: inline-block;
+	padding-bottom: 24px;
+	margin-right: 2px;
+	background: transparent none repeat scroll 0 0;
+}
+
+.breadcrumb a {
+	color: orange;
+	font-weight: bold;
+}
+
+.breadcrumb a:hover {
+	color: #000;
+}
+
+.blog-wrapper {
+	padding: 50px 0 30px;
+}
+
+.post {
+	padding: 12px;
+	border-top: 4px solid orange;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+	margin-bottom: 30px;
+}
+
+.post a {
+	text-decoration: none;
+}
+
+.post a:hover {
+	text-decoration: none;
+}
+
+.post_thumbnail {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+.blog-desc {
+	padding-top: 10px;
+}
+
+.blog-desc:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*Sidebar*/
+
+.widget {
+	margin-bottom: 20px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.widget .title {
+	background: #000;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.widget h4 {
+	text-transform: uppercase;
+	position: relative;
+	color: #fff;
+	background: orange;
+	font-size: 16px;
+	padding: 0 20px;
+	line-height: 35px !important;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.widget .title h4::after {
+	background: inherit;
+    content: "";
+    height: 52px;
+    position: absolute;
+    right: -21px;
+    top: -2px;
+    transform: rotate(145deg);
+    width: 27px;
+}
+
+.widget ul {
+	padding: 10px;
+	list-style: none;
+}
+
+.widget ul li {
+	margin-bottom: 8px;
+}
+
+.widget ul li a {
+	text-decoration-line: underline;
+}
+
+/*Footer*/
+
+footer {
+	background-color: #000;
+	padding: 40px 0;
+	min-height: 300px;
+	color: #eee;
+}
+
+footer h3 {
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+footer ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+footer ul li a {
+	color: #eee;
+}
+
+footer a {
+	color: #eee;
+}
+
+footer .btn {
+	color: #fff !important;
+	background-color: orange !important;
+	border-color: #fff !important;
+}
+
+footer .btn:hover {
+	background-color: #222 !important;
+	border-color: #fff !important;
+}
+
+footer p {
+	color: #eee;
+	font-weight: bold;
+}
+
+.copyrights {
+	background: orange;
+	min-height: 120px;
+	padding: 15px 0;
+}
+/* BEGIN форматування для статтей*/
+label {
+	margin-left: 20px;
+}
+
+label input {
+	margin: none;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	margin-left: 20px;
+}
+/* END */

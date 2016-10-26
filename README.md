@@ -1,5 +1,6 @@
 # Mini-folio
 
-<p>Black & Yellow</p>
+<p>Blackyellow</p>
 <p>Landing</p>
 <p>Landing_about_me</p>
+<p>Black-Yellow: роблю тему для wordpress</p>
