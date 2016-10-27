@@ -1,6 +1,9 @@
 # Mini-folio
 
-<p>Blackyellow</p>
-<p>Landing</p>
-<p>Landing_about_me</p>
-<p>Black-Yellow: ����� ���� ��� wordpress</p>
+<p>Репозиторій з моєю практикою</p>
+
+<p>Blackyellow - прототим теми для wordpress</p>
+<p>Landing - просто лендінг</p>
+<p>City_alpha - краще не відкривать</p>
+<p>Landing_about_me - прототим лендінгу для власного портфоліо</p>
+<p>Black-Yellow: натягую сторінку на wordpress</p>
