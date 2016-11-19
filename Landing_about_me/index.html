@@ -5,18 +5,18 @@
 	<title>Landing</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="css/fonts.css" />
-
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.min.css">
-
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/skins/tomato.css" />
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
 
 </head>
 <body>
@@ -39,11 +39,11 @@
 						</a>
 				</div>
 				<button class="toggle_menu">
-					<div class='sandwich'>
-						<div class='sw-topper'></div>
-						<div class='sw-bottom'></div>
-						<div class='sw-footer'></div>
-					</div>
+					<span class='sandwich'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span>
+						<span class='sw-footer'></span>
+					</span>
 				</button>
 				<nav class="top_menu">
 					<ul>
@@ -70,17 +70,44 @@
 	</header>
 
 <section id="about" class="sec_about bg_light">
-	<h2>Про мене</h2>
-	<div class="descr_wrap">
-		<div class="descr">Зовсім коротенько</div>
+	<div class="sec_header">
+		<h2>Про мене</h2>
+		<div class="descr_wrap">
+			<div class="descr">Зовсім коротенько</div>
+		</div>
 	</div>
 	<div class="sec_content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h3>Володимир Ленський. 25 років, стрілець</h3>
+				<div class="col-md-4 col-md-push-4">
+				<h3>Фото</h3>
+					<div class="personal-photo">
+						<a href="img/personal-photo.jpg" class="popup">
+							<img src="img/personal-photo.jpg" alt="myphoto" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-pull-4">
+					<h3>Трохи про себе</h3>
+					<p>Володимир Ленський. 25 років, стрілець</p>
 					<p>Закінчив Національний авіаційний університет, факультет "Безпека інформації". Прагну працювати в веб-розробці, HTML та CSS на середньому рівні, трохи користуюсь bootstrap та jquery (сітка та навігація по DOM), з javascript та PHP складніше - потрібен Google, бази - phpmyAdmin. Із CMS користувався Joomla 2.5, Wordpress 4.x. 
 					</p>
+				</div>
+				<div class="col-md-4">
+					<h3>Персональна інформація</h3>
+					<ul>
+						<li>День народження: 21 грудня 1990 року</li>
+						<li>Номер телефону: (050) 189-48-67</li>
+						<li>E-mail: <a href="mailto:vovalensky@hotmail.com" target="_blank">vovalensky@hotmail.com</a></li>
+					</ul>
+					<div class="social">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -88,9 +115,11 @@
 </section>
 
 <section id="resume" class="sec_resume">
-	<h2>Резюме</h2>
-	<div class="descr_wrap">
-		<div class="descr">Трішки досягнень</div>
+	<div class="sec_header">
+		<h2>Резюме</h2>
+		<div class="descr_wrap">
+			<div class="descr">Трішки досягнень</div>
+		</div>
 	</div>
 	<div class="sec_content">
 		<div class="container">
@@ -105,11 +134,12 @@
 		</div>
 	</div>
 </section>
-
 <section id="portfolio" class="sec_portfolio bg_dark">
-	<h2>Портфоліо</h2>
-	<div class="descr_wrap">
-		<div class="descr">Мої роботи</div>
+	<div class="sec_header">
+		<h2>Портфоліо</h2>
+		<div class="descr_wrap">
+			<div class="descr">Мої роботи</div>
+		</div>
 	</div>
 	<div class="sec_content">
 		<div class="container">
@@ -119,10 +149,13 @@
 </section>
 
 <section id="contacts" class="sec_contacts bg_light">
-	<h2>Контакти</h2>
-	<div class="descr_wrap">
-		<div class="descr">Залишити повідомлення</div>
+	<div class="sec_header">
+		<h2>Контакти</h2>
+		<div class="descr_wrap">
+			<div class="descr">Залишити повідомлення</div>
+		</div>
 	</div>
+
 	<div class="sec_content">
 		<div class="container">
 			<div class="row">
@@ -132,10 +165,7 @@
 						<li>Пошта: <a href="mailto:vovalensky@hotmail.com">vovalensky@hotmail.com</a></li>
 						<li><a href="https://www.codecademy.com/Arclight90">Аккаунт Codecademy</a></li>
 						<li><a href="https://github.com/Skylen-root/Mini-folio#minifolio">Github</a></li>
-					</ul>
-					
-					
-					
+					</ul>						
 				</div>
 			</div>
 		</div>
@@ -156,18 +186,26 @@
 
 
 
-<!--[if lt IE 9]>
+
+
+<div class="hidden"></div>
+	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
-
-
-<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-<script src="libs/parallax/parallax.min.js"></script>
-<script src="libs/scroll2id/PageScroll2id.min.js"></script>
-<script src="libs/waypoints/waypoints.min.js"></script>
-<script src="js/common.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
 </html>
