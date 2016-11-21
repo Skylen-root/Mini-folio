@@ -3,9 +3,9 @@ $(document).ready(function() {
 	//animate
 	$(".top_text h1").animated("fadeInDown","fadeOutUp");
 	$(".top_text p, .sec_header").animated("fadeInUp","fadeOutDown");
-	$("#about .col-md-4:nth-child(2)").animated("fadeInLeft","fadeOutDown");
-	$("#about .col-md-4:nth-child(1)").animated("flipInY","flipOutY");
-	$("#about .col-md-4:nth-child(3)").animated("fadeInRight","fadeOutDown");
+	$("#about .col-md-4:nth-child(2), .left .resume_item").animated("fadeInLeft","");
+	$("#about .col-md-4:nth-child(1)").animated("flipInY","");
+	$("#about .col-md-4:nth-child(3), .right .resume_item").animated("fadeInRight","");
 
 	//popup
 	 $('.popup').magnificPopup({type:'image'});
@@ -20,7 +20,7 @@ $(document).ready(function() {
 	})
 	//
 
-//.toggle_menu
+	//.toggle_menu
 	$(".toggle_menu").click(function(){
 		if ($(".top_menu").is(":visible")) {
 			$(".top_menu").fadeOut(600);

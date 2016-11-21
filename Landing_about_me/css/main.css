@@ -209,6 +209,10 @@ svg path {
 	//z-index: 100;
 }
 
+section {
+	overflow: hidden;
+}
+
 section h2 {
 	text-align: center;
 	font-size: 24px;
@@ -226,7 +230,7 @@ section h2 {
 	font-size: 14px;
 	letter-spacing: 4px;
 	position: relative;
-	margin-bottom: 130px;
+	margin-bottom: 110px;
 }
 
 .descr_wrap .descr::after {
@@ -271,6 +275,7 @@ section h2 {
 
 .personal-photo {
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .personal-photo img {
@@ -281,6 +286,8 @@ section h2 {
 
 #about ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 #about li {
@@ -297,3 +304,38 @@ section h2 {
 
 }
 
+.left {
+	text-align: right;
+	border-right: 1px solid #ccc;
+}
+
+.sec_resume h3 {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.sec_resume ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.year {
+	font-size: 16px;
+	font-style: italic;
+	padding: 3px 16px;
+	margin-bottom: 20px;
+	background-color: rgb(98,85,249);
+	display: inline-block;
+	color: #ddd;
+	font-weight: bold;
+}
+
+.resume_description {
+	font-style: italic;
+	font-size: 16px;
+}
+
+.resume_item strong {
+	text-transform: uppercase;
+}
