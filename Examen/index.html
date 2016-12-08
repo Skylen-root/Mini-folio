@@ -5,17 +5,78 @@
 	<title>Examen</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
-	
-	<nav class="nav"></nav>
-	
-	<section>
-		<div class="container">
-			<div class="row"></div>
+	<section id="slider_top">
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="social">
+					Social button
+				</div>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.png" alt="logo">
+							Backyard Landscaping	
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+					<ul id="menu-menu-1" class="nav navbar-nav"><li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-67"><a href="#">Home</a></li>
+					<li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a href="#about_us">About us</a></li>
+					<li id="menu-item-149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-149"><a href="#news">News</a></li>
+					<li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="#testimonials">Testimonials</a></li>
+					<li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="#footer">Contact us</a></li>
+					<li id="menu-item-180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-180"><a href="#">Slider</a></li>
+					</ul>					
+				</div>
+			</div>
+		</nav>
+
+		
+
+
+
+		<div class="slider">
+			<ul>
+				<li class="slide-1 show"><p><img src="img/duel_aeolian_vs__lenia__by_wlop-d9w934c.jpg" alt="duel_aeolian_vs__lenia__by_wlop-d9w934c"></p>
+				</li>
+				<li class="slide-2"><p><img src="img/15_the_rise_of_a_planet.jpg" alt="The Rise Of A Planet"></p>
+				</li>
+				<li class="slide-3"><p><img src="img/slide1.png" alt="slide1"></p>
+				</li>
+			</ul>
+			<div class="slider-control">
+				<span class="slide-nav slide-nav-1 slide-nav-on" show-slide="1">1</span>
+				<span class="slide-nav slide-nav-2" show-slide="2">2</span>
+				<span class="slide-nav slide-nav-3" show-slide="3">3</span>
+			</div>
+		</div>
+
+		<div class="slider_info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="icon service"></div>
+						<p>Good service</p>
+					</div>
+					<div class="col-md-4">
+						<div class="icon performance"></div>
+						<p>Hight performance</p>
+					</div>
+					<div class="col-md-4">
+						<div class="icon experience">50</div>
+						<p>Experience</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="about_us">
@@ -91,9 +152,6 @@
 		</div>
 	</section>
 
-
-
-
 	<section id="testimonials">
 		<div class="container">
 			<div class="row">
@@ -105,16 +163,31 @@
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="container">
-			<div class="row"></div>
-		</div>
-	</section>
-
-
-
-
-
+	<footer>
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Contacts us</h4>
+						<div class="textwidget">
+							<p>Unit 8 Honywood Business Park Honywood Road Basildon, Essex, SS</p>
+							<p>Tel: 01268 272 030 Fax: 01268 272 040 Email: info@saigb.co.uk</p>
+						</div>
+					</div>
+					<div class="col-md-6"><h4>Find us</h4>
+						<div class="textwidget">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.116964938548!2d30.523833400238843!3d50.45018056085244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42d5962fe7e791c!2z0JzQsNC50LTQsNC9!5e0!3m2!1sru!2sua!4v1479839667296" style="border:0" allowfullscreen="" width="100%" height="176px" frameborder="0"></iframe>
+						</div>
+					</div>								
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy">
+						Copyright @ 2015
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
 
 
 <!--[if lt IE 9]>
