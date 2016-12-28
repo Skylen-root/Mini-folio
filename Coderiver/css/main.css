@@ -12,15 +12,27 @@ body {
 }
 
 header {
-	background-color: #ededed;
+	
 }
 
 .top-nav {
 	margin: 0;
-	
+	background-color: #ededed;
+}
+
+.top-nav:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .top-nav li {
+	float: left;
+	margin: 0;
+	list-style: none;
+}
+
+.top-nav li a {
 	font-family: Georgia, serif;
 	font-size: 12pt;
 	color: #636b74;
@@ -28,10 +40,8 @@ header {
 	display: inline-block;
 	padding: 0 16px;
 	line-height: 1;
-	margin: 0;
 	line-height: 46px;
 }
-
 
 .top-nav li a {
 	text-decoration: none;
@@ -56,17 +66,40 @@ li.nav-active:after {
 	left: 0;
 }
 
-.top-nav li:hover {
+.top-nav li a:hover {
 	background-color: #d9dadc;
 }
 
+/*grid*/
+.container {
+	width: 1030px;
+	margin: 0 auto;
+}
 
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.col-center, .col-right, .col-left {
+	width: 315px;
+	padding: 0;
+	float: left;
+}
+
+.col-left, .col-center {
+	margin-right: 42px;
+}
 
 .content {
 	padding-top: 53px;
 	padding-bottom: 30px;
 }
 
+.content a {
+	text-decoration: none;
+}
 
 .block-title {
 	text-align: center;
@@ -126,11 +159,9 @@ li.nav-active:after {
 
 .all-news .news_item {
 	padding: 8px 0;
-	max-height: 83px;
 }
 
 .all-news .news_item h3 {
-	//white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -325,6 +356,10 @@ li.nav-active:after {
 	margin: 0 auto 10px;
 }
 
+.submit:hover {
+	box-shadow: 0 0 3px 3px gray;
+}
+
 .result {
 	text-align: center;
 }
@@ -339,7 +374,7 @@ li.nav-active:after {
 
 footer {
 	width: 100%;
-	min-height: 170px;
+	height: 170px;
 	background-color: #6b747d;
 }
 

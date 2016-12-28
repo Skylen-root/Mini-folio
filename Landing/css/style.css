@@ -101,10 +101,7 @@ h3 {
 
 .n_desc {
 	text-align: center;
-
 }
-
-.slider
 
 section {
 	display: block;
@@ -221,6 +218,10 @@ h4 {
 	
 }
 
+.five_sec .descr_top, .five_sec .descr_top + p {
+	color: #fff;
+}
+
 .item {
 	margin: 85px auto 0;
 	text-align: center;
@@ -323,6 +324,8 @@ h4 {
 	height: 100%;
 	padding: 50px 0 0 0;
 	vertical-align: middle;
+	margin: 0 auto;
+	width: 928px;
 }
 
 .brand_slider img {
