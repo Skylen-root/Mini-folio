@@ -53,7 +53,9 @@ body {
 
 .slider-main {
   overflow: hidden;
-  max-height: 700px; }
+  height: 700px; }
+  .slider-main .slick-slide {
+    height: 700px; }
   .slider-main .slick-prev, .slider-main .slick-next {
     height: 100px;
     z-index: 10; }
@@ -77,11 +79,52 @@ body {
       background-color: #ffea00;
       border: 3px solid #414146; }
   .slider-main img {
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
+  .slider-main .slide-content {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 50%; }
+    .slider-main .slide-content h1 {
+      color: #000;
+      font-size: 70px;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-weight: normal; }
+      .slider-main .slide-content h1 span {
+        background-color: #ffea00;
+        padding: 0 13px;
+        margin-bottom: 7px; }
+    .slider-main .slide-content .slide-description {
+      margin-top: 14px; }
+      .slider-main .slide-content .slide-description p {
+        color: #fff;
+        background-color: #414146;
+        display: inline-block;
+        font-size: 24px;
+        margin-bottom: 1px;
+        padding: 0 5px; }
+    .slider-main .slide-content .button {
+      color: #fff;
+      background-color: #000;
+      font-size: 15px;
+      padding: 10px 28px;
+      display: inline-block;
+      line-height: 1;
+      border-bottom: 2px solid #ffea00;
+      margin-top: 7%;
+      margin-left: 42%;
+      -webkit-transition: all .3s linear .01s;
+      transition: all .3s linear .01s; }
+      .slider-main .slide-content .button:hover {
+        background-color: #ffea00;
+        border-bottom: 2px solid #000;
+        color: #000;
+        -webkit-transition: all .3s linear .01s;
+        transition: all .3s linear .01s; }
 
 section h2 {
   font-size: 35px;
-  font-family: "Century Gothic";
   color: #424147;
   text-transform: uppercase;
   line-height: 0.6;
@@ -90,7 +133,6 @@ section h2 {
   font-weight: normal; }
   section h2 + p {
     font-size: 24px;
-    font-family: "Century Gothic";
     color: #424147;
     line-height: 0.875;
     text-align: center;
@@ -119,7 +161,23 @@ section h2 {
   text-align: center;
   padding: 0 26px;
   margin-bottom: 30px;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
+
+.item-hide {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all .2s linear 0s;
+  transition: all .2s linear 0s; }
+  .item-hide:hover {
+    opacity: 1; }
+  .item-hide .item_description {
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 12px 50px 0 18px; }
 
 .item_header {
   position: relative;
@@ -137,8 +195,6 @@ section h2 {
     bottom: 0px;
     width: 100%;
     font-weight: normal; }
-  .item_header img {
-    display: none; }
   .item_header .item_icon_seo, .item_header .item_icon_webdev, .item_header .item_icon_webdes, .item_header .item_icon_graph {
     width: 100%;
     height: 100%;
@@ -165,9 +221,6 @@ section h2 {
   .item_description p {
     display: table-cell;
     vertical-align: middle; }
-
-.item_description-hide {
-  visibility: hidden; }
 
 .h2-wrap {
   margin-bottom: 32px;
@@ -225,8 +278,6 @@ section h2 {
   position: relative;
   margin-bottom: 120px; }
   .carousel-clients .slick-slide {
-    width: 140px;
-    height: 65px;
     line-height: 65px;
     background-color: #fff;
     margin: 0 0.4%;
@@ -238,8 +289,7 @@ section h2 {
 .slick-prev, .slick-next {
   width: 46px;
   height: 65px;
-  background-color: #000;
-  position: absolute; }
+  background-color: #000; }
   .slick-prev:before, .slick-next:before {
     content: "";
     width: 100%;
@@ -259,7 +309,8 @@ section h2 {
     background: url("../img/slick-prev.png") center no-repeat; }
 
 footer [class^="col-"] {
-  float: left; }
+  float: left;
+  padding: 0 1%; }
 
 .col-35 {
   width: 35%; }
@@ -363,28 +414,3 @@ footer [class^="col-"] {
   font-size: 14px;
   line-height: 70px;
   vertical-align: middle; }
-
-@media screen and (max-width: 1280px) {
-  .carousel-clients {
-    padding: 0 20px; } }
-
-@media screen and (max-width: 1170px) {
-  .item {
-    padding: 0 10px; }
-  .item_description {
-    width: 225px; }
-  .slider-main img {
-    width: auto;
-    height: initial; } }
-
-@media screen and (max-width: 992px) {
-  .item_wrap {
-    width: 50%; }
-  .item {
-    padding: 0 10px; }
-  .item_description {
-    width: 275px; }
-  footer [class^="col-"] {
-    float: none;
-    width: 100%;
-    padding: 0 30px; } }
