@@ -106,8 +106,8 @@ h3 {
 section {
 	display: block;
 	width: 100%;
-	min-height: 440px;
-	padding-top: 90px;
+	/*min-height: 440px;
+	padding-top: 90px;*/
 }
 
 .notification {
@@ -322,18 +322,47 @@ h4 {
 
 .brand_slider {
 	height: 100%;
-	padding: 50px 0 0 0;
 	vertical-align: middle;
-	margin: 0 auto;
-	width: 928px;
+	margin: 50px auto 0;
 }
 
-.brand_slider img {
-	margin-right: 65px;
+.brand_slider .slick-list {
+	margin: 0 45px;
 }
 
-.brand_slider img:last-child {
-	margin-right: 0;
+.brand_slider .slick-arrow {
+	width: initial;
+	height: initial;
+}
+.brand_slider .slick-prev {
+	left: 0;
+}
+
+.brand_slider .slick-next {
+	right: 0;
+}
+
+.brand_slider .slick-prev::before {
+	content: "<";
+}
+
+.brand_slider .slick-next::before {
+	content: ">";
+}
+
+.brand_slider .slick-prev::before, .brand_slider .slick-next::before {
+	color: #5ac8fb;
+	font-weight: bold;
+	font-size: 38px;
+	font-family: Arial;
+}
+
+.brand_slider .slick-slide {
+	text-align: center;
+}
+
+.brand_slider .slick-slide img {
+	display: inline;
 }
 
 

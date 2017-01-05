@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name=viewport content="width=device-width, initial-scale=1"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Gulp</title>
 	<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 	<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
-	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/libs.min.js"></script>
-	
-
 </head>
 <body>
 	<div class="header">
@@ -18,7 +16,8 @@
 			<a href="#" class="logo">
 				<img src="img/logo.png" alt="logo">
 			</a>
-			<div class="navigation">
+			<button type="button" class="toggle_menu">Menu</button>
+			<div class="navigation navigation-top">
 			<ul>
 				<li><a href="#" class="nav-active">Home</a></li>
 				<li><a href="#">Portfolio</a></li>
@@ -238,89 +237,11 @@
 
 
 
-
-
-
-
-
-
-
-	
-<script>
-  $(document).ready(function(){ 
-	$('.masonry-grid').masonry({
-// указываем элемент-контейнер в котором расположены блоки для динамической верстки
-	  itemSelector: '.masonry-item',
-// указываем класс элемента являющегося блоком в нашей сетке
-          singleMode: false,
-// true - если у вас все блоки одинаковой ширины
-	  isResizable: true,
-	  fitWidth: true,
-// перестраивает блоки при изменении размеров окна
-	  isAnimated: true,
-// анимируем перестроение блоков
-          animationOptions: { 
-	      queue: false, 
-	      duration: 500 
-	  }
-// опции анимации - очередь и продолжительность анимации
-	}); 
-  });
-
-$(document).ready(function(){
-	$('.carousel-clients').slick({
-		// varibleWidth: true,
-		// respondTo: 'min',
-		infinite: true,
-		// adaptiveHeight: true,
-		slidesToShow: 8,
-		slidesToScroll: 1,
-        dots: false,
-		 responsive: [{
-
-      breakpoint: 1650,
-      settings: {
-        slidesToShow: 6,
-        infinite: true
-      }
-
-    }, {
-
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 4,
-      }
-
-    }, {
-
-      breakpoint: 878,
-      settings: {
-        slidesToShow: 2,
-         }
-    }]
-	});
-
-	$('.slider-main').slick({
-		dots: true,
-		infinite: true,
-		speed: 500,
-		fade: true,
-		cssEase: 'linear'
-	});
-
-});
-
-$('.imgfill').imagefill();
-
-$('.masonry-grid').magnificPopup({
-	delegate: 'a',
-	type:'image',
-	 gallery:{
-    enabled:true
-  }
-});
-
-</script>
-
+<script src="js/libs.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/2.1.0/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="libs/imagefill/js/jquery-imagefill.js"></script>
+<script src="libs/masonry/dist/masonry.pkgd.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>

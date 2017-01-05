@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Ocean Landing</title>
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -174,11 +177,13 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="brand_slider">
-						<img src="img/brand_bl3.png" alt="brand" class="brand_item">
-						<img src="img/brand_bl3.png" alt="brand" class="brand_item">
-						<img src="img/brand_bl3.png" alt="brand" class="brand_item">
-						<img src="img/brand_bl3.png" alt="brand" class="brand_item">
-						<img src="img/brand_bl3.png" alt="brand" class="brand_item">
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
+						<div><img src="img/brand_bl3.png" alt="brand" class="brand_item"></div>
 					</div>
 				</div>
 			</div>
@@ -220,7 +225,39 @@
 
 	<script type="text/javascript" src="libs/jquery/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript" src="libs/animate/animate-css.js"></script>
+
+
+	<script>
+		$('.brand_slider').slick({
+		infinite: true,
+		// adaptiveHeight: true,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		 responsive: [{
+
+      breakpoint: 1650,
+      settings: {
+        slidesToShow: 4,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 4,
+      }
+
+    }, {
+
+      breakpoint: 878,
+      settings: {
+        slidesToShow: 2,
+         }
+    }]
+	});
+	</script>
 </body>
 </html>
