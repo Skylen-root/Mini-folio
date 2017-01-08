@@ -82,30 +82,30 @@ $('.masonry-grid').magnificPopup({
 
 
 
-
+// navigation
 $(".toggle_menu").click(function(){
 	if($(window).width() < 768) {
 		if ($(".navigation-top").is(":visible")) {
-			$(".navigation-top").fadeOut(300);
+			$(".navigation-top").fadeOut(200);
 		}
 		else {
-		$(".navigation-top").fadeIn(300);
+		$(".navigation-top").fadeIn(200);
 		};
 	}
 	});
 
 	$(".navigation-top a").click(function(){
 		if( $(window).width() < 768 ) {
-			$(".navigation-top").fadeOut(300);
+			$(".navigation-top").fadeOut(200);
 			$(".sandwich").toggleClass("active");
 		}
 	});
 
 $(window).resize(function(){			  
 	if( $(window).width() > 768 ) {
-		$(".navigation-top").fadeIn(300);
+		$(".navigation-top").fadeIn(200);
 	}
 	else {
-		$(".navigation-top").fadeOut(300);
+		$(".navigation-top").fadeOut(200);
 	}
 });
