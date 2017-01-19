@@ -1,0 +1,318 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+body {
+	background-color: rgb(172,216,225);
+	height: 100%;
+}
+
+.wrap {
+	width: 1180px;
+	background-color: #ffffff;
+	margin: 20px auto 50px auto;
+	border-radius: 10px 10px;
+	height: 100%;
+	padding-bottom: 55px;
+}
+
+header {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 60px;
+}
+
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.header_info {
+	width: 100%;
+	height: 200px;
+	padding-top: 56px;
+}
+
+.logo {
+	float: left;
+	margin-left: 60px;
+	margin-right: 40px;
+}
+
+.logo_title {
+	float: left;
+	margin-right: 50px;
+	padding-left: 15px;
+	font-size: 22px;
+	border-left: 2px solid #aaaaaa;
+	width: 500px;
+}
+
+.head_contact {
+	float: left;
+	position: relative;
+}
+
+.call_pic {
+	position: absolute;
+}
+
+.number {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.adres {
+	font-size: 13px;
+}
+
+.number, .adres {
+	margin-left: 40px;
+}
+
+.nav_top {
+	margin-left: 18px;
+	margin-right: 18px;
+	height: 48px;
+	background-color: rgb(44,155,138);
+	border-radius: 5px 5px;
+}
+
+.nav_top ul li {
+	list-style: none;
+	float: left;
+	border-right: 1px solid red;
+	transition: 0.2s;
+}
+
+.nav_top ul li:hover {
+	background-color: rgb(30,102,91);
+}
+
+.nav_top ul li:first-child:hover {
+	border-radius: 5px 0 0 5px;
+}
+
+.nav_top ul li:last-child {
+	border-radius: 0 5px 5px 0;
+	border-right: none;
+	margin-right: none;
+	width: 153px;
+}
+
+.nav_top ul li:last-child:hover {
+	background-color: rgb(30,102,91);
+	border-radius: 0 5px 5px 0;
+	margin-right: none;
+	display: block;
+	width: 153px;
+}
+
+.last_list_link {
+	margin: auto auto;
+}
+
+.nav_top ul li a {
+	text-shadow: 0px 0px 5px #123123;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 19px;
+	padding-right: 19px;
+	line-height: 48px;
+	color: #ffffff;
+}
+
+.nav_top ul li a:hover {
+	color: rgb(214,239,147);
+}
+
+.list_left_bar {
+	margin: 5px 0 0 55px;
+	list-style-image: url(list_style.png);
+}
+
+.left_bar_cap {
+	margin: 0 32px 0 40px;
+	font-size: 1.2em;
+	border-bottom: 2px solid rgb(60,132,118);
+}
+
+.list_left_bar a  {
+	border-bottom: 1px dashed rgb(60,122,143);
+	line-height: 26px;
+	color: #4d8da9;
+}
+
+a {
+	text-decoration: none;
+}
+
+.row_center {
+	width: 100%;
+}
+
+.left_bar {
+	float: left;
+	width: 25%;
+}
+
+.content {
+	float: left;
+}
+
+.right_bar {
+	float: left;
+	width: 25%;
+	padding-right: 18px;
+}
+
+.content {
+	width: 50%;
+	padding: 0 32px 0 32px;
+}
+
+.right_bar_but {    
+	height: 69px;
+	border-radius: 5px;
+	position: relative;
+	padding-left: 90px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.right_bar_but:hover {
+	opacity: 0.8;
+}
+
+.right_bar_but p {
+	display: inline-block;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#but_r {
+	background-color: rgb(208,93,49);
+	padding-top: 3px;
+}
+
+#but_y {
+	background-color: rgb(222,179,51);
+	padding-top: 13px;
+}
+
+#but_b {
+	background-color: rgb(18,122,185);
+	padding-top: 13px;
+}
+
+.carusel {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.item {
+	text-align: justify;
+}
+
+.today_work {
+	list-style: none;
+	margin-top: 40px;
+}
+
+.today_work h2 {
+	border-bottom: 2px solid rgb(53,118,110);
+}
+
+
+.today_work li {
+	text-transform: uppercase;
+	color: rgb(53,118,110);
+	font-size: 16px;
+	text-decoration: underline;
+	margin: 15px 0;
+}
+
+.today_work a {
+	text-decoration: underline;
+	text-transform: none;;
+	display: block;
+	color: #4d8da9;
+}
+
+/*FOOTER*/
+footer {
+	padding: 30px 30px 50px 80px;
+	position: relative;
+	width: 100%;
+	height: 120px;
+	background-color: rgb(53,118,110);
+}
+
+footer ul {
+	width: 430px;
+	margin: 13px auto;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+footer ul li a {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.adver {
+	position: relative;
+}
+
+.adver img {
+	position: absolute;
+	left: 19px;
+	top: 7px;
+}
+
+.record img {
+	margin-right: 5px;
+}
+
+.service {
+	margin-top: 80px;
+	margin-left: 38px;
+}
+
+.service h2 {
+	margin-bottom: 22px;
+	border-bottom: 2px solid rgb(53,118,110);
+}
+
+.service p {
+	margin-bottom: 16px;
+}
+
+.service li {
+	margin-bottom: 15px;
+	margin-left: 21px;
+	list-style-image: url(ok.png);
+}
+
+.service a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #4d8da9;
+	text-decoration: underline;
+}

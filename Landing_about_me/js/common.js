@@ -8,7 +8,23 @@ $(document).ready(function() {
 	$("#about .col-md-4:nth-child(3), .right .resume_item").animated("fadeInRight","");
 
 	//popup
-	 $('.popup').magnificPopup({type:'image'});
+	$('.popup').magnificPopup({type:'image'});
+
+
+	$('.portfolio_gallery_img').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		 gallery:{
+		enabled:true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300,
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+	});
 
 	//resize height
 	function heightDetect(){
@@ -58,7 +74,7 @@ $("#form").submit(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			alert("Нажаль безкоштовний хостинг не надсилає електронні листи =(");
 			$("#form").trigger("reset");
 		});
 		return false;

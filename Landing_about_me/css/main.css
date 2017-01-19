@@ -344,7 +344,37 @@ section h2 {
 	text-transform: uppercase;
 }
 
+/*Portfolio=========*/
 
+.portfolio_gallery .portfolio_gallery_item {
+	width: 25%;
+	padding: 10px;
+	float: left;
+}
+
+.portfolio_gallery h4 {
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #fff;
+}
+
+.portfolio_gallery_img {
+	overflow: hidden;
+	height: 120px;
+}
+
+.portfolio_gallery img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+	/*width: 25%;
+	height: auto;
+	padding: 20px;
+	display: block;*/
+}
 
 /*Contacts==========*/
 
@@ -369,7 +399,8 @@ section h2 {
 }
 
 #form input:focus, #form textarea:focus {
-	box-shadow: 0 0 11px 4px #fff;	
+	box-shadow: 0 0 11px 4px #fff;
+	outline-color: #fff;
 }
 
 

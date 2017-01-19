@@ -87,23 +87,22 @@
 				</div>
 				<div class="col-md-4 col-md-pull-4">
 					<h3>Трохи про себе</h3>
-					<p>Володимир Ленський. 25 років, стрілець</p>
-					<p>Закінчив Національний авіаційний університет, факультет "Безпека інформації". Прагну працювати в веб-розробці, HTML та CSS на середньому рівні, трохи користуюсь bootstrap та jquery (сітка та навігація по DOM), з javascript та PHP складніше - потрібен Google, робота з базами через phpMyAdmin. Із CMS користувався Joomla 2.5, Wordpress 4.x. 
+					<p>Закінчив Національний авіаційний університет, факультет "Безпека інформації". Прагну працювати в веб-розробці, HTML та CSS на середньому рівні, користуюсь bootstrap та jquery (сітка та навігація по DOM), робота з базами через phpMyAdmin. Із CMS користувався Joomla 2.5, Wordpress 4.x. Трохи PHP, Gulp, Sass.
 					</p>
 				</div>
 				<div class="col-md-4">
 					<h3>Персональна інформація</h3>
 					<ul>
-						<li>День народження: 21 грудня 1990 року</li>
+						<li>Рік народження: 1990</li>
 						<li>Номер телефону: (050) 189-48-67</li>
 						<li>E-mail: <a href="mailto:vovalensky@hotmail.com" target="_blank">vovalensky@hotmail.com</a></li>
 					</ul>
 					<div class="social">
 						<ul>
 							<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100000970744474" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://github.com/Skylen-root/Mini-folio" target="_blank"><i class="fa fa-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -129,8 +128,8 @@
 						<div class="resume_description">ПАТ "Банк "Український Капітал"
 						<strong>Спеціаліст відділу технічного обслуговування управління інформаційних технологій</strong></div>
 						<p>Адмініструю сайт банку - <a href="http://ukrcapital.com.ua">ukrcapital.com.ua</a>: контент менеджмент, правки шаблона, плагіни. CMS Joomla 2.5.</p>
-						<p>З сервісів - Єдине Вікно Welsend, UPC-online, Liga</p>
-						<p>Для обслуговування ПК,офісної техніки та локальної мережі використовується система заявок OTRS (раніше була jtrac)</p>
+						<p>Сервіси - Єдине Вікно Welsend, UPC-online, Liga</p>
+						<p>Для обслуговування ПК,офісної техніки та локальної мережі використовується система заявок OTRS / jtrac</p>
 					</div>
 					<div class="resume_item">
 						<div class="year">2015-2015</div>
@@ -168,7 +167,42 @@
 	</div>
 	<div class="sec_content">
 		<div class="container">
-			<div class="row"><div class="col-md-12">Дану секцію невдовзі заповню, а поки що тут буде: <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe exercitationem ducimus quod eligendi adipisci sed possimus autem dolor esse consectetur a enim explicabo quos in ipsam consequuntur facere sequi, ad.</strong></div></div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portfolio_gallery">
+						<div class="portfolio_gallery_item">
+							<h4><a href="../Coderiver/index.html">Coderiver</a></h4>
+							<div class="portfolio_gallery_img">
+								<a href="img/coderiver.png"><img src="img/coderiver.png" alt="coderiver"></a>
+							</div>
+						</div>
+						<div class="portfolio_gallery_item">
+							<h4><a href="../Examen/index.html">Examen</a></h4>
+							<div class="portfolio_gallery_img">
+								<a href="img/examen.png"><img src="img/examen.png" alt="examen"></a>
+							</div>
+						</div>
+						<div class="portfolio_gallery_item">
+							<h4><a href="../Landing/index.html">Landing</a></h4>
+							<div class="portfolio_gallery_img">
+								<a href="img/landing.png"><img src="img/landing.png" alt="landing"></a>
+							</div>
+						</div>
+						<div class="portfolio_gallery_item">
+							<h4><a href="../Office/index.html">Office</a></h4>
+							<div class="portfolio_gallery_img">
+								<a href="img/office.png"><img src="img/office.png" alt="office"></a>
+							</div>
+						</div>
+						<div class="portfolio_gallery_item">
+							<h4><a href="../medicine/index.html">Medicine</a></h4>
+							<div class="portfolio_gallery_img">
+								<a href="img/medicine.png"><img src="img/medicine.png" alt="medicine"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -199,11 +233,11 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<form id="form">
+					<form id="form" action="mail.php">
 						<input type="text" name="name" placeholder="Ваше ім'я" required /><br />
 						<input type="text" name="mail" placeholder="Ваша електронна адреса" required /><br />
 						<textarea name="message" placeholder="Ваше повідомлення" data-validation-required-message="Ви не ввели повідомлення" required="" aria-invalid="false"></textarea>
-						<button>Відправити</button>
+						<button type="submit">Відправити</button>
 					</form>
 				</div>
 			</div>
@@ -219,9 +253,9 @@
 				<div class="social">
 						<ul>
 							<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100000970744474" target="_blank"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://github.com/Skylen-root/Mini-folio" target="_blank"><i class="fa fa-github"></i></a></li>
 						</ul>
 					</div>
 			</div>
