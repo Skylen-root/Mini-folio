@@ -289,13 +289,22 @@ h4 {
 	margin-top: 22px;
 }
 
-.switch {
-	margin: 15px auto  0;
-	text-align: center;
-	margin-top: 55px;
+/*slider user*/
+
+.slick-slider *:focus {
+	border: none;
+	outline: none;
 }
 
-.switch span {
+.user_slider .slick-dots {
+	bottom: -55px;
+}
+
+.user_slider .slick-arrow, .user_slider .slick-next {
+	opacity: 0;
+}
+
+.user_slider .slick-dots li button:before {
 	display: inline-block;
 	border: 1px solid #5ac8fb;
 	color: #5ac8fb;
@@ -303,14 +312,13 @@ h4 {
 	height: 10px;
 	border-radius: 50%;
 	margin-right: 5px;
+	content: "";
+	opacity: 1;
 }
 
-.switch span:last-child {
-	margin-right: 0;
-}
-
-.switch .s_active {
+.user_slider .slick-dots li.slick-active button:before {
 	background-color: #5ac8fb;
+	opacity: 1;
 }
 
 /*SECTION s_brand*/
