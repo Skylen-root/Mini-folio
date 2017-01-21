@@ -24,6 +24,32 @@ $('.slide-nav').click (
 	}
 );
 
+//  Slider Testimonials
+
+$('.slider-testimonials').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: false,
+	centerMode: true,
+	infinite: true,
+	variableWidth: true,
+	focusOnSelect: true,
+	asNavFor: '.slider-testimonials-nav'
+});
+$('.slider-testimonials-nav').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	asNavFor: '.slider-testimonials',
+	dots: false,
+	arrows: false,
+	centerMode: true,
+	centerPadding: '60px',
+	focusOnSelect: true,
+	variableWidth: true,
+	//infinite: true
+});
+
 
 
 //.toggle_menu
