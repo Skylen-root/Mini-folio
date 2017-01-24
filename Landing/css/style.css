@@ -11,19 +11,19 @@ p {
 }
 
 
-.default {
+/*.default {
 	position: fixed;
 	z-index: 100;
 	top: 0;
 	height: initial;
-	background-color: rgba(0,0,0, .8);
-	
-}
+	background-color: rgba(0,0,0, .6);
+}*/
 
 .top_bar {
 	border-bottom: 1px solid rgba(136,131,127,.5);
 	display: block;
 	width: 100%;
+	background-color: rgba(0,0,0, .7);
 }
 
 .logo {
@@ -441,27 +441,30 @@ footer ul {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 	.navigation {
 		float: none;
 	}
 	.navigation ul li {
 		float: none;
 	}
-
+	
 	.navigation ul li a {
+
+		padding-top: 10px;
+		padding-bottom: 10px;
 		width: 100%;
 		display: block;
-		line-height: 36px;
+		line-height: 20px;
 		text-align: center;
 		transition: color 0.2s ease-out 0s;
 	}
-
+/*
 	.navigation ul li a:hover {
 		background-color: rgba(0,0,0,0.3);
 		transition: color 0.2s ease-out 0s;
 	}
-}
+}*/
 
 
 

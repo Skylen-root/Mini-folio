@@ -1,13 +1,13 @@
 
-$("#top_bar").removeClass("default");
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-		 $("#top_bar").addClass("default").fadeIn('fast');
-		} 
-		else {
-		 $("#top_bar").removeClass("default").fadeIn('fast');
-		};
-});
+// $("#top_bar").removeClass("default");
+// 	$(window).scroll(function(){
+// 		if ($(this).scrollTop() > 100) {
+// 		 $("#top_bar").addClass("default").fadeIn('fast');
+// 		} 
+// 		else {
+// 		 $("#top_bar").removeClass("default").fadeIn('fast');
+// 		};
+// });
 	
 
 
