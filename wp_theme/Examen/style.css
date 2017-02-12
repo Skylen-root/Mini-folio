@@ -77,6 +77,10 @@ a {
 
 /*navigation------------*/
 
+.w1170 {
+	max-width: 1170px;
+}
+
 .navbar {
 	background-color: rgb(128,180,18);
 	color: #fff;
@@ -99,7 +103,7 @@ a {
 	float: right;
 }
 
-.current-menu-item a {
+.current-menu-item > a {
 	color: #000;
 	text-shadow: 2px 2px 2px #000;
 }
@@ -109,24 +113,25 @@ a {
 	text-shadow: none;
 }
 
-#navbar a {
+#navbar a, .navbar-nav > li > a {
 	color: #fff;
-	margin-left: 23px;
+	margin-left: 12px;
+	margin-right: 12px;
 	padding: 0;
 	line-height: 100px;
 	margin-top: 0;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
+	background-color: initial;
 }
 
-#top-bar nav a:hover {
-	background-color: initial;
-	text-decoration: underline;
+#navbar .dropdown-menu {
+	background-color: rgb(128,180,18);
+	border-bottom: 2px solid #000;
 }
 
-#top-bar nav a:focus {
-	background-color: initial;
-	outline: hidden;
+#navbar .dropdown-menu > li> a{
+	line-height: 2;
 }
 
 .toggle_menu {

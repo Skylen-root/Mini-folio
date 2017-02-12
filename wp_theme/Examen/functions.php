@@ -111,5 +111,22 @@
 	add_filter('wp_nav_menu','change_submenu_class');
 
 
+
+
+
+
+// Register custom navigation walker
+	/* Theme setup */
+add_action( 'after_setup_theme', 'wpt_setup' );
+    if ( ! function_exists( 'wpt_setup' ) ):
+        function wpt_setup() {  
+            register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+        } endif;
+	 require_once('wp_bootstrap_navwalker.php');
+
+
+
  ?>
+
+
 

@@ -16,43 +16,45 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid w1170">
 
-<section id="slider_top">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		
+		<div class="navbar-brand">
+		<?php if ( function_exists( 'the_custom_logo' )) {
+		the_custom_logo();
+		} ?>
 
-
-				<nav class="navbar navbar-inverse">
-					<div class="container-fluid">
-
-						<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						
-
-						<div class="navbar-brand">
-						<?php if ( function_exists( 'the_custom_logo' )) {
-						the_custom_logo();
-						} ?>
-
-						<p><?php bloginfo('description'); ?></p>
-						</div>
-
-						
-						</div>
-						<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-					
-						<?php wp_nav_menu(array('theme_location'=>'menu', 'menu_class'=>'nav navbar-nav','container'=>'false')); ?>
-						</div>
-					</div>
-				</nav>
+		<p><?php bloginfo('description'); ?></p>
+		</div>
 
 		
+		</div>
+		<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+	
+		<?php /* Primary navigation */
+			wp_nav_menu( array(
+				'menu' => 'top_menu',
+				'depth' => 2,
+				'container' => false,
+				'menu_class' => 'nav navbar-nav',
+				//Process nav menu using our custom nav walker
+				'walker' => new wp_bootstrap_navwalker())
+			);
+		?>
+		</div>
+	</div>
+</nav>
 
 
-
+<section id="slider_top">
 	<div class="slider">
 		<ul>
 			<?php
@@ -97,13 +99,8 @@
 			</div>
 		</div>
 	</div>
+
 </section>
-
-
-
-
-
-
 
 	
 
