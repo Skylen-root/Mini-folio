@@ -105,17 +105,17 @@
 					<div class="slider-testimonials-nav">
 						<div class="slider-testimonials-nav-slide">
 							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/slide-img-1.jpg" alt="photo">
+								<img src="wp-content/uploads/2017/02/slide-img-1-150x150.jpg" alt="photo">
 							</div>
 						</div>
 						<div class="slider-testimonials-nav-slide">
 							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/slide-img-2.jpg" alt="photo">
+								<img src="wp-content/uploads/2017/02/slide-img-2-150x150.jpg" alt="photo">
 							</div>
 						</div>
 						<div class="slider-testimonials-nav-slide">
 							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/slide-img-3.jpg" alt="photo">
+								<img src="wp-content/uploads/2017/02/cropped-slide-img-3-150x150.jpg" alt="photo">
 							</div>
 						</div>
 					</div>

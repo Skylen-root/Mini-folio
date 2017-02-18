@@ -10,15 +10,6 @@ p {
 	line-height: 1.6em;
 }
 
-
-/*.default {
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	height: initial;
-	background-color: rgba(0,0,0, .6);
-}*/
-
 .top_bar {
 	border-bottom: 1px solid rgba(136,131,127,.5);
 	display: block;
@@ -48,23 +39,12 @@ p {
 }
 
 .navigation {
-	//position: absolute;
-	//right: 0;
-	//height: 73px;
 	float: right;
-
 }
-
-/*.navigation::last-child {
-	content: ".";
-	height: 0;
-	clear: both;
-}*/
 
 .navigation ul {
 	margin: 0;
 	padding: 0;
-	
 }
 
 .navigation li {
@@ -86,6 +66,15 @@ p {
 .navigation li a:hover {
 	text-decoration: none;
 	color: #5ac8fb;
+}
+
+.navbar-fixed-top .navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.navbar-toggle {
+	margin-top: 16px;
 }
 
 .icon {
@@ -206,7 +195,7 @@ h4 {
 	background: no-repeat url("../img/five_bg.jpg");
 	background-position: top center;
 	background-size: 100% 100%;
-	min-height: 500px;
+	min-height: 450px;
 	padding-top: 90px;
 }
 
@@ -223,8 +212,12 @@ h4 {
 	color: #fff;
 }
 
+.five_sec .descr_top + p {
+	margin-bottom: 20px;
+}
+
 .item {
-	margin: 85px auto 0;
+	margin: 35px auto 35px;
 	text-align: center;
 	color: #fff;
 }
@@ -380,13 +373,16 @@ h4 {
 footer {
 	color: #838383;
 	min-height: 360px;
-	padding-top: 65px;
-	padding-bottom: 50px;
 	background-color: #333333;
 }
 
-footer h4 {
+.footer-item h4 {
 	color: #c9c9c9;
+}
+
+.footer-item {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .social_button a {
@@ -438,6 +434,12 @@ footer ul {
 
 .footer_gallery img:last-child {
 	margin-right: 0;
+}
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 
