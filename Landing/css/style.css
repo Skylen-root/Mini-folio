@@ -1,13 +1,25 @@
 
 
 header {
-	background: url("../img/bg.jpg");
-	min-height: 600px;
+	-webkit-background-size: cover;
+	background-size: cover;
 	display: block;
+	position: relative;
+	padding-top: 87px;
 }
 
 p {
 	line-height: 1.6em;
+}
+
+.btn {
+	border-radius: initial;
+	padding: 8px 36px;
+	border: none;
+}
+
+.btn-primary {
+	background-color: #5ac8fb;
 }
 
 .top_bar {
@@ -15,6 +27,8 @@ p {
 	display: block;
 	width: 100%;
 	background-color: rgba(0,0,0, .7);
+	position: absolute;
+	top: 0;
 }
 
 .logo {
@@ -68,6 +82,10 @@ p {
 	color: #5ac8fb;
 }
 
+.navbar {
+	margin-bottom: 0;
+}
+
 .navbar-fixed-top .navbar-collapse {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -77,11 +95,13 @@ p {
 	margin-top: 16px;
 }
 
-.icon {
-	height: 35px;
-	width: 35px;
-	margin: 0 auto;
-	background: no-repeat url("../img/mail.png");
+.notification {
+	text-align: center;
+}
+
+.notification .glyphicon {
+	font-size: 28px;
+	color: #5AC8FB;
 }
 
 h3 {
@@ -93,11 +113,37 @@ h3 {
 	margin-bottom: 20px;
 }
 
+/*	TOP SLIDER	*/
+#bs3-top-carousel {
+	
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-top: -30px;
+}
+
+#bs3-top-carousel .carousel-inner > .item {
+	height: 590px;
+}
+
+#bs3-top-carousel .carousel-caption {
+	  margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    width: 70%;
+    
+}
+
+/*	TOP SLIDER END	*/
+
+
 section {
 	display: block;
 	width: 100%;
-	/*min-height: 440px;
-	padding-top: 90px;*/
+	
 }
 
 .notification {
@@ -136,7 +182,8 @@ section {
 
 
 .top_gallery {
-	//min-height: 440px;
+	max-width: 1900px;
+	margin: 0 auto;
 }
 
 .top_gallery > img {
@@ -426,10 +473,17 @@ footer ul {
 	background: url("../img/Social-Network-Twitter.png");
 }
 
-.footer_gallery img {
+.footer_gallery a {
+	display: block;
 	float: left;
-	margin-right: 9px;
-	margin-top: 10px;
+	margin-right: 7px;
+	margin-top: 7px;
+	border: 1px solid #888;
+}
+
+.footer_gallery img {
+	width: 62px;
+	height: 62px;
 }
 
 .footer_gallery img:last-child {
@@ -443,7 +497,13 @@ footer ul {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+	.logo {
+		margin-top: 0;
+		margin-left: 5px;
+	}
+
 	.navigation {
 		float: none;
 	}
@@ -483,4 +543,15 @@ footer ul {
 .logo:hover {
 	animation: blink 1s infinite alternate;
 	
+}
+
+
+@media (max-width: 768px){
+	header {
+		padding-top: 58px;
+	}
+
+	#bs3-top-carousel .carousel-inner > .item {
+		height: 350px;
+	}
 }

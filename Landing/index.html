@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-			 <nav id="top_bar" class="navbar navbar-inverse top_bar">
+			 <nav id="top_bar" class="navbar navbar-inverse navbar-fixed-top top_bar">
 				<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -25,46 +26,71 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse navigation">
 				  <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Панама</a></li>
-					<li><a href="#">Туніс</a></li>
-					<li><a href="#">Ямайка</a></li>
-					<li><a href="#">Австралія</a></li>
+					<li class="active"><a href="#">Panama</a></li>
+					<li><a href="#">Iceland</a></li>
+					<li><a href="#">Micronesia</a></li>
+					<li><a href="#">Uta</a></li>
 				  </ul>
 				</div>
 			  </div>
 			</nav>
 		
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="slider">
-						
+			<!-- slider begin -->
+			<div id="bs3-top-carousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Example headline.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorem.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>Another example headline.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+								<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="item active">
+						<div class="container">
+							<div class="carousel-caption">
+								<h1>One more for good measure.</h1>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
 					</div>
 				</div>
+				<a class="left carousel-control" href="#bs3-top-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#bs3-top-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
-		</div>
+			<!-- slider end -->
+		
 	</header>
+
 	<section class="notification">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<div class="icon"></div>
+					<span class="glyphicon glyphicon-envelope"></span>
 					<h3>Donald Duck</h3>
 					<div class="n_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi modi, ipsa cumque omnis quibusdam, qui quam debitis eveniet nam labore.</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="icon"></div>
+					<span class="glyphicon glyphicon-star"></span>
 					<h3>Mickey Mouse</h3>
 					<div class="n_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ut dolore doloremque ducimus, voluptatem porro. Libero excepturi minus dolorem facere.</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="icon"></div>
+					<span class="glyphicon glyphicon-pencil"></span>
 					<h3>Shrek</h3>
 					<div class="n_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ab accusantium ipsum sint nihil impedit rerum labore, dolorum praesentium iste.</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
-					<div class="icon"></div>
+					<span class="glyphicon glyphicon-ok"></span>
 					<h3>Megamind</h3>
 					<div class="n_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quibusdam similique expedita suscipit mollitia nam natus minus quidem assumenda, itaque.</div>
 				</div>
@@ -134,6 +160,7 @@
 					<h4>Michael Bay</h4>
 					<p>I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. However, I’m going to have to admit that my emotional baggage has built up walls that not even a shock and awe campaign could bring down. But I do love. And in fact I even love unconditionally. 
 					</p>
+					<div class="btn btn-primary">Button</div>
 				</div>
 				<div class="col-md-4">
 					<h4>Twitter</h4>
@@ -160,7 +187,7 @@
 						<div class="user_slide">
 							<div class="descr_top">You Are Not Prepared</div>
 							<p>My life For Aiur</p>
-							<img src="img/bot_photo1.jpg" alt="" class="photo">
+							<img src="img/portret01.jpg" alt="" class="photo">
 							<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nesciunt ullam laboriosam vitae maxime cupiditate similique quod mollitia sequi nihil? Culpa illo dolorum dicta nisi?</p>
 							<div class="name">Overlord</div>
 							<div class="switch">
@@ -172,7 +199,7 @@
 						<div class="user_slide">
 							<div class="descr_top">You Are Not Prepared</div>
 							<p>My life For Aiur</p>
-							<img src="img/bot_photo1.jpg" alt="" class="photo">
+							<img src="img/portret01.jpg" alt="" class="photo">
 							<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nesciunt ullam laboriosam vitae maxime cupiditate similique quod mollitia sequi nihil? Culpa illo dolorum dicta nisi?</p>
 							<div class="name">Overlord</div>
 							<div class="switch">
@@ -184,7 +211,7 @@
 						<div class="user_slide">
 							<div class="descr_top">You Are Not Prepared</div>
 							<p>My life For Aiur</p>
-							<img src="img/bot_photo1.jpg" alt="" class="photo">
+							<img src="img/portret01.jpg" alt="" class="photo">
 							<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nesciunt ullam laboriosam vitae maxime cupiditate similique quod mollitia sequi nihil? Culpa illo dolorum dicta nisi?</p>
 							<div class="name">Overlord</div>
 							<div class="switch">
@@ -249,7 +276,16 @@
 					<div class="footer-item">
 						<h4>Rob Starkinson</h4>
 						<div class="footer_gallery clearfix">
-							<img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo"><img src="img/bot_photo1.jpg" alt="Rob photo">
+							<a href="img/portret01.jpg"><img src="img/portret01.jpg" alt="Rob photo"></a>
+							<a href="img/portret02.jpg"><img src="img/portret02.jpg" alt="Rob photo"></a>
+							<a href="img/portret03.jpg"><img src="img/portret03.jpg" alt="Rob photo"></a>
+							<a href="img/portret04.jpg"><img src="img/portret04.jpg" alt="Rob photo"></a>
+							<a href="img/portret02.jpg"><img src="img/portret01.jpg" alt="Rob photo"></a>
+							<a href="img/portret03.jpg"><img src="img/portret02.jpg" alt="Rob photo"></a>
+							<a href="img/portret04.jpg"><img src="img/portret03.jpg" alt="Rob photo"></a>
+							<a href="img/portret01.jpg"><img src="img/portret04.jpg" alt="Rob photo"></a>
+							<a href="img/portret02.jpg"><img src="img/portret01.jpg" alt="Rob photo"></a>
+							<a href="img/portret03.jpg"><img src="img/portret02.jpg" alt="Rob photo"></a>
 						</div>
 					</div>
 				</div>
@@ -262,8 +298,10 @@
 	<script type="text/javascript" src="libs/jquery/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="libs/imagefill/jquery-imagefill.js"></script>
+	<script type="text/javascript" src="libs/parallax/parallax.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-
 
 
 </body>
