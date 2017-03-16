@@ -92,7 +92,7 @@ p {
 }
 
 .navbar-toggle {
-	margin-top: 16px;
+	margin-top: 12px;
 }
 
 .notification {
@@ -134,7 +134,7 @@ h3 {
     bottom: 0;
     height: 50%;
     width: 70%;
-    
+    padding-top: 50px;
 }
 
 /*	TOP SLIDER END	*/
@@ -237,9 +237,8 @@ h4 {
 
 .five_sec {
 	position: relative;
-	background: #656565;
 	background-size: cover;
-	background: no-repeat url("../img/five_bg.jpg");
+	//background: no-repeat url("../img/five_bg.jpg");
 	background-position: top center;
 	background-size: 100% 100%;
 	min-height: 450px;
@@ -252,7 +251,7 @@ h4 {
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,.45);
-	
+	z-index: -1;
 }
 
 .five_sec .descr_top, .five_sec .descr_top + p {
@@ -496,62 +495,3 @@ footer ul {
 	clear: both;
 }
 
-
-@media screen and (max-width: 767px) {
-
-	.logo {
-		margin-top: 0;
-		margin-left: 5px;
-	}
-
-	.navigation {
-		float: none;
-	}
-	.navigation ul li {
-		float: none;
-	}
-	
-	.navigation ul li a {
-
-		padding-top: 10px;
-		padding-bottom: 10px;
-		width: 100%;
-		display: block;
-		line-height: 20px;
-		text-align: center;
-		transition: color 0.2s ease-out 0s;
-	}
-/*
-	.navigation ul li a:hover {
-		background-color: rgba(0,0,0,0.3);
-		transition: color 0.2s ease-out 0s;
-	}
-}*/
-
-
-
-@keyframes blink {
-	from {
-		color: #eee;
-	}
-	to {
-		color: #5ac8fb; 
-	}
-}
-
-
-.logo:hover {
-	animation: blink 1s infinite alternate;
-	
-}
-
-
-@media (max-width: 768px){
-	header {
-		padding-top: 58px;
-	}
-
-	#bs3-top-carousel .carousel-inner > .item {
-		height: 350px;
-	}
-}

@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 767px) {
+
+	.logo {
+		margin-top: 0;
+		margin-left: 5px;
+	}
+
+	.navigation {
+		float: none;
+	}
+	.navigation ul li {
+		float: none;
+	}
+	
+	.navigation ul li a {
+
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100%;
+		display: block;
+		line-height: 20px;
+		text-align: center;
+		transition: color 0.2s ease-out 0s;
+	}
+
+
+
+	header {
+		padding-top: 58px;
+	}
+
+	#bs3-top-carousel .carousel-inner > .item {
+		height: 390px;
+	}
+
+	#bs3-top-carousel .carousel-caption {
+		padding-top: 0;
+	}
+
+}

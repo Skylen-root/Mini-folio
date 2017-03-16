@@ -18,14 +18,16 @@ $('.user_slider').slick({
 	slidesToShow: 1,
 	adaptiveHeight: true,
 	autoplay: true,
-  autoplaySpeed: 5000
+	autoplaySpeed: 5000
 });
 
 
 $('.brand_slider').slick({
 		infinite: true,
 		slidesToShow: 6,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
+		autoplay: true,
+		autoplaySpeed: 10000,
 			responsive: [{
 			breakpoint: 1650,
 			settings: {
@@ -45,7 +47,7 @@ $('.brand_slider').slick({
 			breakpoint: 878,
 			settings: {
 				slidesToShow: 2,
-				 }
+				}
 		}]
 	});
 
@@ -73,3 +75,4 @@ $(document).ready(function() {
 
 //  parallax
 $('header').parallax({imageSrc: 'img/bg2.jpg'});
+$('.five_sec').parallax({imageSrc: 'img/five_bg.jpg'});
