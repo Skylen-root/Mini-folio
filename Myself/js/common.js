@@ -67,17 +67,17 @@ $(".toggle_menu, .menu_item").click(function() {
 
 
 // contact form
-$("#form").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Нажаль безкоштовний хостинг не надсилає електронні листи =(");
-			$("#form").trigger("reset");
-		});
-		return false;
-	});
+// $("#form").submit(function() {
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "https://docs.google.com/forms/d/e/1FAIpQLScY1l9C3DdThIImU7qzMHQE5Pr3Ri7Q3-Pw03Zh6UQ1LAHKzg/formResponse?embedded=true",
+// 			data: $(this).serialize()
+// 		}).done(function() {
+// 			$(this).find("input").val("");
+// 			alert("Дякую за повідомлення, відповім найближчим часом");
+// 			$("#form").trigger("reset");
+// 		});
+// 		return false;
+// 	});
 //
 });

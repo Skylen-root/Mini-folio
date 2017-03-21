@@ -1,6 +1,7 @@
 body {
 	min-width: 320px;
 	line-height: 1.6;
+	font-family: "Roboto", sans-serif;
 }
 
 section {
@@ -223,6 +224,7 @@ section h2 {
 	font-size: 24px;
 	text-transform: uppercase;
 	margin: 0 0 10px;
+	letter-spacing: 2px;
 }
 
 .descr_wrap {
@@ -352,11 +354,25 @@ section h2 {
 	float: left;
 }
 
-.portfolio_gallery h4 {
+.portfolio_gallery h4 a {
+	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	font-style: italic;
+	color: rgb(98,85,249);
+	font-size: 18px;
+	transition: all .25s linear ;
+}
+
+.portfolio_gallery h4 a:hover {
 	color: #fff;
+	-moz-transform: scale(1.2);
+	-ms-transform: rscale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: all .25s linear ;
+	letter-spacing: 2px;
 }
 
 .portfolio_gallery_img {
@@ -364,16 +380,20 @@ section h2 {
 	height: 120px;
 }
 
+.portfolio_gallery_img:hover {
+	-moz-transform: scale(1.1);
+	-ms-transform: rscale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	transition: all .5s linear ;}
+
 .portfolio_gallery img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-    border: none;
-	/*width: 25%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	height: auto;
-	padding: 20px;
-	display: block;*/
+	border: none;
 }
 
 /*Contacts==========*/
@@ -384,13 +404,12 @@ section h2 {
 
 .contact_box .fa {
 	color: rgb(98, 85, 249);
-	
 }
 
 
 /*form ====================*/
 
-#form input, #form textarea {
+.form input, .form textarea {
 	margin-bottom: 10px;
 	padding: 10px;
 	border: #fff;
@@ -398,14 +417,12 @@ section h2 {
 	width: 100%;
 }
 
-#form input:focus, #form textarea:focus {
+.form input:focus, .form textarea:focus {
 	box-shadow: 0 0 11px 4px #fff;
 	outline-color: #fff;
 }
 
-
-
-#form button {
+.form button {
 	border: none;
 	color: #fff;
 	line-height: 40px;
