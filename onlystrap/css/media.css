@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+
+	/* navigation */
+
+	.navbar {
+		margin: 0 0 20px 0;
+	}
+
+	.navbar-nav>li>a {
+		border: 1px solid #bcbcbc;
+	}
+	/**/
+
+	
+	.last-events .media-body {
+		padding-right: 15px;
+	}
+
+
+
+
+
+	.quick-form {
+		margin-left: 0;
+	}
+
+	.quick-form:after {
+		display: none;
+	}
+
+
+}
+
+@media (max-width: 991px){
+
+.middle {
+	display: block;
+	vertical-align: initial;
+}
+
+	.quick-form {
+		margin-left: 0;
+	}
+
+	.quick-form:after {
+		display: none;
+	}
+}
