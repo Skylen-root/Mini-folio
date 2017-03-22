@@ -58,9 +58,18 @@ a {
 
 .top_menu ul {
 	text-align: center;
-	margin: 0;
-	margin-top: 150px;
+	//margin: 0;
+	//margin-top: 150px;
 	padding: 0;
+}
+
+.middle {
+	display: table;
+	width: 100%;
+	overflow: auto;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .top_menu ul li {
@@ -83,6 +92,7 @@ a {
 	background-color: rgba(50,50,50,.55);
 	opacity: background .5;
 	transition: all 0.5s, top 0.2s;
+	letter-spacing: 9px;
 }
 
 /*sandwich*/
@@ -377,7 +387,7 @@ section h2 {
 
 .portfolio_gallery_img {
 	overflow: hidden;
-	height: 120px;
+	height: 180px;
 }
 
 .portfolio_gallery_img:hover {
@@ -404,6 +414,8 @@ section h2 {
 
 .contact_box .fa {
 	color: rgb(98, 85, 249);
+	vertical-align: middle;
+	width: 70px;
 }
 
 
@@ -446,3 +458,5 @@ footer .social ul {
 	margin: 0;
 	padding: 0;
 }
+
+
