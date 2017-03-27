@@ -358,7 +358,7 @@ section h2 {
 
 /*Portfolio=========*/
 
-.portfolio_gallery .portfolio_gallery_item {
+.portfolio_gallery_item {
 	width: 25%;
 	padding: 10px;
 	float: left;
