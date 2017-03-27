@@ -248,7 +248,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 	position: relative;
 }
 
-.quick-form legend {
+.quick-form .form-title {
 	color: #fff;
 	font-size: 22px;
 	text-transform: uppercase;

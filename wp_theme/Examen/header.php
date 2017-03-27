@@ -54,53 +54,7 @@
 </nav>
 
 
-<section id="slider_top">
-	<div class="slider">
-		<ul>
-			<?php
-			$count=1;
-			$args = array( 'post_type' => 'movie_reviews', 'posts_per_page' => 10 );//тут мы указываем на тип записи по которой желаем пройтись и количество записей на одной странице
-			$loop = new WP_Query( $args );// получаем результат запроса в переменное loop
-			while ( $loop->have_posts() ) : $loop->the_post(); // далее стандартная итерация по массиву
-			echo "<li class='slide-$count'>";
-			the_title();// заголовок
-			the_post_thumbnail(array(150,150)); //получаем миниатюру записи
-			echo '';
-			the_content();// запись
-			echo '</li>';
-			$count++;
-			endwhile;
-			?>
-		</ul>
-		<div class="slider-control">
-			<?php
-			for ($i=1; $i< $count ; $i++) {
-				echo "<span class='slide-nav slide-nav-$i' show-slide='$i'>$i</span>";
-			}
-			?>
-		</div>
-	</div>
 
-	<div class="slider_info">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="icon service"></div>
-					<p>Good service</p>
-				</div>
-				<div class="col-md-4">
-					<div class="icon performance"></div>
-					<p>Hight performance</p>
-				</div>
-				<div class="col-md-4">
-					<div class="icon experience">50</div>
-					<p>Experience</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</section>
 
 	
 

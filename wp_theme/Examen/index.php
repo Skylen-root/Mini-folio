@@ -1,5 +1,54 @@
 <?php get_header(); ?>
 
+<section id="slider_top">
+	<div class="slider">
+		<ul>
+			<?php
+			$count=1;
+			$args = array( 'post_type' => 'slider-main', 'posts_per_page' => 10 );//тут мы указываем на тип записи по которой желаем пройтись и количество записей на одной странице
+			$loop = new WP_Query( $args );// получаем результат запроса в переменное loop
+			while ( $loop->have_posts() ) : $loop->the_post(); // далее стандартная итерация по массиву
+			echo "<li class='slide-$count'>";
+			//the_title();// заголовок
+			//the_post_thumbnail(array(150,150)); //получаем миниатюру записи
+			//the_content();// запись
+			$image = get_field('slide-img');
+			echo "<img src=" . $image['url'] . " />";
+			echo '</li>';
+			$count++;
+			endwhile;
+			?>
+		</ul>
+		<div class="slider-control">
+			<?php
+			for ($i=1; $i< $count ; $i++) {
+				echo "<span class='slide-nav slide-nav-$i' show-slide='$i'>$i</span>";
+			}
+			?>
+		</div>
+	</div>
+
+	<div class="slider_info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="icon service"></div>
+					<p>Good service</p>
+				</div>
+				<div class="col-md-4">
+					<div class="icon performance"></div>
+					<p>Hight performance</p>
+				</div>
+				<div class="col-md-4">
+					<div class="icon experience"></div>
+					<p>Experience</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
 <section id="about_us">
 		<div class="container">
 			<div class="row">
@@ -88,36 +137,42 @@
 		</div>
 
 					<div class="slider-testimonials">
-						<div class="slider-testimonials-slide">
-							<img src="wp-content/uploads/2017/02/slide-img-1.jpg" alt="photo">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut esse molestias ex, quos similique cum?</p>
-						</div>
-						<div class="slider-testimonials-slide">
-							<img src="wp-content/uploads/2017/02/slide-img-2.jpg" alt="photo">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut esse molestias ex, quos similique cum?</p>
-						</div>
-						<div class="slider-testimonials-slide">
-							<img src="wp-content/uploads/2017/02/slide-img-3.jpg" alt="photo">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut esse molestias ex, quos similique cum?</p>
-						</div>
+
+						<?php
+							$args = array( 'post_type' => 'slider-testimonials', 'posts_per_page' => 10 );//тут мы указываем на тип записи по которой желаем пройтись и количество записей на одной странице
+							$loop = new WP_Query( $args );// получаем результат запроса в переменное loop
+							while ( $loop->have_posts() ) : $loop->the_post(); // далее стандартная итерация по массиву
+							echo '
+							<div class="slider-testimonials-slide">
+								<img src="'. get_the_post_thumbnail_url() .'" alt="photo">
+								<p>'. get_the_content() .'</p>
+							</div>
+						';
+							//the_title();// заголовок
+							//the_post_thumbnail(array(150,150)); //получаем миниатюру записи
+							//the_content();// запись
+							//$image = get_field('slider-testimonials-img');
+							//echo "<img src=" . $image['url'] . " />";
+							endwhile;
+						?>
+					
 					</div>
 
 					<div class="slider-testimonials-nav">
-						<div class="slider-testimonials-nav-slide">
-							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/slide-img-1-150x150.jpg" alt="photo">
+					<?php
+							$args = array( 'post_type' => 'slider-testimonials', 'posts_per_page' => 10 );//тут мы указываем на тип записи по которой желаем пройтись и количество записей на одной странице
+							$loop = new WP_Query( $args );// получаем результат запроса в переменное loop
+							while ( $loop->have_posts() ) : $loop->the_post(); // далее стандартная итерация по массиву
+							echo '
+							<div class="slider-testimonials-nav-slide">
+								<div class="img-wrap">
+									<img src="'. get_the_post_thumbnail_url() .'" alt="photo">
+								</div>
 							</div>
-						</div>
-						<div class="slider-testimonials-nav-slide">
-							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/slide-img-2-150x150.jpg" alt="photo">
-							</div>
-						</div>
-						<div class="slider-testimonials-nav-slide">
-							<div class="img-wrap">
-								<img src="wp-content/uploads/2017/02/cropped-slide-img-3-150x150.jpg" alt="photo">
-							</div>
-						</div>
+						';
+							endwhile;
+						?>
+					
 					</div>
 
 	</section>

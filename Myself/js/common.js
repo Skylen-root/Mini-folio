@@ -34,6 +34,14 @@ $(document).ready(function() {
 	$(window).resize(function(){
 		heightDetect();
 	})
+
+	function heightDetect2(){
+		$(".main_head").css("height", $(window).height());
+	}
+	heightDetect();
+	$(window).resize(function(){
+		heightDetect2();
+	})
 	//
 
 	//.toggle_menu

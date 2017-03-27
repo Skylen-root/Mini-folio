@@ -4,7 +4,6 @@ Template Name: Examen News
 */
 ?>
 
-
 <?php get_header(); ?>
 
 	<section id="latest_news" class="transparent">

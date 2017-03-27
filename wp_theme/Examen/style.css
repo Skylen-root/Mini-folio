@@ -91,8 +91,9 @@ a {
 .navbar .navbar-brand, .custom-logo {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 12.65px;
-	height: 100%;
+	max-height: 55px;
 	color: #fff;
+	width: auto;
 }
 
 .navbar-brand p {
@@ -249,6 +250,7 @@ section:nth-child(2n) h2 {
 	width: auto;
 	float: left;
 	margin-right: 20px;
+	max-height: 312px;
 }
 
 .post_thumbnail_single {
@@ -343,7 +345,7 @@ section:nth-child(2n) h2 {
 /*footer-----------*/
 
 #footer {
-	min-height: 325px;
+	//min-height: 325px;
 	color: #d4d4d4;
 	padding-bottom: 0;
 }
@@ -529,9 +531,8 @@ section:nth-child(2n) h2 {
 }
 
 .slider-testimonials-slide img {
-	width: 148px;
-	height: auto;
-
+	width: auto;
+	height: 100%;
 	overflow: hidden;
 	float: left;
 	margin-right: 20px;
@@ -590,46 +591,34 @@ h1.error404 {
 }
 
 
-@media screen and (max-width: 991px) {
 
-.post_thumbnail {
-	margin: 0;
-	float: none;
+/* widget form*/
+
+.form input, .form textarea {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: #fff;
+	display: block;
 	width: 100%;
-	height: auto;
 }
 
-
-#slider_top {
-	min-height: unset;
+.form input:focus, .form textarea:focus {
+	box-shadow: 0 0 11px 4px #fff;
+	outline-color: #fff;
 }
 
-.slider_info, .slider {
-	display: none;
+.form button {
+	border: none;
+	color: #fff;
+	line-height: 40px;
+	padding: 0 25px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 10px;
+	float: right;
+	background-color: rgb(128,180,18);
 }
-
-
-
-.navbar-toggle {
-	margin-top: 18px;
-}
-
-
-@media screen and (max-width: 767px) {
-
-.navbar-nav {
-	float: unset;
-}
-
-#navbar a {
-	line-height: 50px;
-}
-
-}
-
-
-
-
 
 
 
