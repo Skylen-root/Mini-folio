@@ -67,11 +67,8 @@ $(".toggle_menu, .menu_item").click(function() {
 
 
 
-
-
-
-
-
+// scroll2id
+$(".top_menu ul li a").mPageScroll2id();
 
 
 // contact form
