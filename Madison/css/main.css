@@ -132,13 +132,11 @@ body {
 }
 
 .navbar-default .navbar-nav > li.active > a {
-  margin-top: -3px;
-  line-height: 62px;
   color: #ebe6df;
   background-color: #62493d;
 }
 
-.navbar-default .navbar-nav > li.active > a:focus, .navbar-default .navbar-nav > li.active > a:hover {
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #ebe6df;
   background-color: #62493d;
 }
@@ -303,6 +301,7 @@ footer .bgc-footer .up {
   width: 46px;
   height: 48px;
   margin-left: -23px;
+  z-index: 100;
 }
 
 footer .bgc-footer .bgc-footer-img {
@@ -379,12 +378,4 @@ footer .bgc-footer .bgc-footer-img {
   .container {
     width: 970px;
   }
-}
-
-
-@font-face {
-  font-family: "Lato Black";
-  url("../fonts/Lato-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
