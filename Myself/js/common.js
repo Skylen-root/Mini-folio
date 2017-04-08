@@ -7,6 +7,8 @@ $(document).ready(function() {
 	$("#about .col-md-4:nth-child(1)").animated("flipInY","");
 	$("#about .col-md-4:nth-child(3), .right .resume_item").animated("fadeInRight","");
 
+
+
 	//popup
 	$('.popup').magnificPopup({type:'image'});
 

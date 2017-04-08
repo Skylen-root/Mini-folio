@@ -6,6 +6,12 @@
 	.top_wrap .top_text p {
 		font-size: 1.1em;
 	}
+
+	.portfolio_gallery_img {
+		max-height: 400px;
+		
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -17,9 +23,9 @@
 		font-size: 1.1em;
 	}
 
-
+/*
 	.portfolio_gallery .portfolio_gallery_item {
 		width: 50%;
-	}
+	}*/
 
 }

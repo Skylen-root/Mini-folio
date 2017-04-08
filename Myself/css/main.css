@@ -45,6 +45,10 @@ a {
 	top: 20px;
 }
 
+.toggle_menu:focus {
+	outline: none;
+}
+
 .top_menu {
 	position: fixed;
 	width: 100%;
@@ -58,8 +62,6 @@ a {
 
 .top_menu ul {
 	text-align: center;
-	//margin: 0;
-	//margin-top: 150px;
 	padding: 0;
 }
 
@@ -84,13 +86,13 @@ a {
 	display: block;
 	padding: 20px 0;
 	letter-spacing: 7px;
+	color: #fff;
 	-webkit-transition: background 0.5s, top 0.2s;
 	-moz-transition: background 0.5s, top 0.2s;
 	transition: background 0.5s, top 0.2s;
 }
 
 .top_menu ul li a:hover {
-	color: #fff;
 	background-color: rgba(50,50,50,.55);
 	opacity: background .5;
 	-webkit-transition: all 0.5s, top 0.2s;
@@ -311,8 +313,8 @@ section h2 {
 	background-color: #eee;
 }
 
-.wp-theme {
-	background-color: #3d5c5c;
+.wp-theme .portfolio_gallery h4 a {
+	color: #000;
 }
 
 .main_footer {
@@ -321,14 +323,22 @@ section h2 {
 	color: #bbb;
 	font-weight: 600;
 }
+/* about */
+
 
 #about h3 {
 	text-align: center;
 	text-transform: uppercase;
+	color: #333;
+}
+
+#about h3 > .fa {
+	margin-right: 15px;
 }
 
 #about p {
 	margin-bottom: 25px;
+	color: #333;
 }
 
 .personal-photo {
@@ -382,7 +392,7 @@ section h2 {
 	font-size: 16px;
 	font-style: italic;
 	padding: 3px 16px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 	background-color: rgb(98,85,249);
 	display: inline-block;
 	color: #ddd;
@@ -401,7 +411,7 @@ section h2 {
 /*Portfolio=========*/
 
 .portfolio_gallery_item {
-	width: 25%;
+	//width: 25%;
 	padding: 10px;
 	float: left;
 }
@@ -431,7 +441,7 @@ section h2 {
 
 .portfolio_gallery_img {
 	overflow: hidden;
-	height: 180px;
+	max-height: 269px;
 }
 
 .portfolio_gallery_img:hover {
@@ -454,14 +464,17 @@ section h2 {
 /*Contacts==========*/
 
 .contact_box {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .contact_box .fa {
 	color: rgb(98, 85, 249);
 	vertical-align: middle;
-	width: 70px;
+	margin-right: 10px;
 }
+
+
+/* contacts */
 
 
 /*form ====================*/
