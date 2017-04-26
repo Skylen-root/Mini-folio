@@ -42,8 +42,17 @@ h1,h2,h3,h4,h5,h6,p,a {
 	padding: 0 14px;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 800;
-	box-shadow: 6px 7px 0 0 rgba(0,0,0, .1);
 	margin: 0;
+	transition: all .1s linear;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.navbar > .container .navbar-brand:hover {
+	top: -2px;
+	left: -2px;
+	box-shadow: 6px 7px 0 0 rgba(0,0,0, .1); */
 }
 
 .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
@@ -64,8 +73,13 @@ h1,h2,h3,h4,h5,h6,p,a {
 	border-bottom: 1px solid #eeeeee;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
 	background: transparent;
+	color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
@@ -178,6 +192,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 .last-events .media-body {
 	padding-right: 70px;
+	padding-bottom: 15px;
 }
 
 .more {
@@ -372,6 +387,10 @@ h1,h2,h3,h4,h5,h6,p,a {
 	border-top: 1px solid #f3f3f3;
 }
 
+.blog_post a {
+	color: #000;
+}
+
 .blog_post:first-child {
 	border-top: none;
 	padding-top: 0;
@@ -416,6 +435,10 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 
 /**/
+
+.block {
+	padding-bottom: 40px;
+}
 
 .block ul {
 	margin: 0;

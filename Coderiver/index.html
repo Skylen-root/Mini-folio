@@ -6,21 +6,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header>
+
 		<div class="container">
-			<ul class="top-nav">
-				<li><a href="#">Новости</a></li><li><a href="#">Фото</a></li><li><a href="#">Видео</a></li><li><a href="#">Статьи</a></li><li><a href="#">Интервью</a></li><li><a href="#">Колонка</a></li><li><a href="#">Письмо</a></li><li><a href="#">Зразы</a></li><li class="nav-active"><a href="#">Дайджест</a></li><li><a href="#">Опрос</a></li><li><a href="#">Авторы</a></li>
-			</ul>
+			<div class="main-navigation">
+				<div class="nav-head">
+					<div id="menu-toggle" class="menu-toggle">MENU</div>
+				</div>
+				<ul class="top-nav">
+					<li><a href="#">Новости</a></li><li><a href="#">Фото</a></li><li><a href="#">Видео</a></li><li><a href="#">Статьи</a></li><li><a href="#">Интервью</a></li><li><a href="#">Колонка</a></li><li><a href="#">Письмо</a></li><li><a href="#">Зразы</a></li><li class="nav-active"><a href="#">Дайджест</a></li><li><a href="#">Опрос</a></li><li><a href="#">Авторы</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
 	<section class="content">
 		<div class="container">
 			<div class="row">
-				<div class="col-left">
+				<div class="col-md-4">
 					<div class="main-news">
 						<div class="block-title">
 							<div class="in-line">
@@ -109,7 +117,7 @@
 				</div>
 
 				<!-- Колонка cтатьи -->
-				<div class="col-center">
+				<div class="col-md-4">
 					<div class="articles">
 						<div class="block-title">
 							<div class="in-line">
@@ -153,7 +161,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-right">
+				<div class="col-md-4">
 					<div class="author_column">
 						<div class="block-title">
 							<div class="in-line">
@@ -205,22 +213,33 @@
 <footer>
 	<div class="container">
 		<div class="row">
-				<div class="space">
-					<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
-					<p>Lorem ipsum dolor sit amet.</p>
+				<div class="col-md-12">
+					<div class="space">
+						<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 		</div>
 		<div class="row info">
-			<ul>
-				<li><a href="#">Об издании</a></li>
-				<li><a href="#">Рекламодателям</a></li>
-				<li><a href="#">Соглашения и правила</a></li>
-				<li><a href="#">Помощь</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+			<div class="col-md-12">
+				<ul>
+					<li><a href="#">Об издании</a></li>
+					<li><a href="#">Рекламодателям</a></li>
+					<li><a href="#">Соглашения и правила</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </footer>
 
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

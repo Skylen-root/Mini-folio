@@ -1,3 +1,13 @@
+$(window).load(function() {
+
+	$(".preloader_inner").fadeOut();
+	$(".preloader").delay(400).fadeOut("slow");
+
+	
+
+}); 
+
+
 $(document).ready(function() {
 
 	//animate
@@ -11,7 +21,6 @@ $(document).ready(function() {
 
 	//popup
 	$('.popup').magnificPopup({type:'image'});
-
 
 	$('.portfolio_gallery_img').magnificPopup({
 		delegate: 'a',
@@ -60,6 +69,17 @@ $(document).ready(function() {
 		$(".top_menu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
 	});
+
+	$(document).mouseup(function (e){
+		  var container = $(".top_menu");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+			container.fadeOut(600);
+			if ($(".sandwich").hasClass("active")) {
+				$(".sandwich").toggleClass("active");
+			}
+		  }
+		});
+
 //
 
 $(".toggle_menu, .menu_item").click(function() {
@@ -70,8 +90,41 @@ $(".toggle_menu, .menu_item").click(function() {
 
 
 // scroll2id
-$(".top_menu ul li a").mPageScroll2id();
 
+$(".top_menu ul li a").click(function () {
+	$(".top_menu ul li a").mPageScroll2id({
+		scrollEasing: "linear",
+		scrollSpeed: 600
+});
+})
+
+
+
+// $(".to_top").mPageScroll2id({
+// 	scrollSpeed: 300,
+// 	scrollEasing: "easeOutQuint"
+// });
+
+$(".to_top").click( function () {
+	$(this).mPageScroll2id({
+		scrollEasing: "linear",
+		scrollSpeed: 300
+});
+}
+
+	
+	)
+
+
+
+// scroll to_top
+$(window).scroll(function(){
+				if ($(this).scrollTop() > 300) {
+					$(".to_top").show("fast");
+				} else {
+					$(".to_top").hide("fast");
+				};
+			});
 
 // contact form
 // $("#form").submit(function() {

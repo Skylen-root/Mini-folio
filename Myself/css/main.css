@@ -1,7 +1,7 @@
 body {
 	min-width: 320px;
 	line-height: 1.6;
-	font-family: "Roboto", sans-serif;
+	font-family: "LatoWeb", sans-serif;
 }
 
 section {
@@ -51,7 +51,8 @@ a {
 
 .top_menu {
 	position: fixed;
-	width: 100%;
+	width: 20%;
+	min-width: 350px;
 	height: 100%;
 	background-color: rgba(0,0,0,.9);
 	z-index: 50;
@@ -442,16 +443,20 @@ section h2 {
 .portfolio_gallery_img {
 	overflow: hidden;
 	max-height: 269px;
+		-webkit-transition: all .5s linear ;
+	-moz-transition: all .5s linear ;
+	transition: all .5s linear ;
 }
 
 .portfolio_gallery_img:hover {
 	-webkit-transform: scale(1.1);
 	    -ms-transform: scale(1.1);
-	        -moz-transform: scale(1.1);
-	     transform: scale(1.1);
+		 -moz-transform: scale(1.1);
+	   		  transform: scale(1.1);
 	-webkit-transition: all .5s linear ;
 	-moz-transition: all .5s linear ;
-	transition: all .5s linear ;}
+	transition: all .5s linear ;
+}
 
 .portfolio_gallery img {
 	margin: 0;
@@ -527,4 +532,47 @@ footer .social ul {
 	padding: 0;
 }
 
+/*preloader*/
+.preloader {
+	background: none repeat scroll 0 0 #fff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
 
+.preloader .preloader_inner {
+	background-image: url(../img/preloader.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-posirion: center center;
+	background-color: #fff;
+	height: 160px;
+	width: 160px;
+	margin-top: -90px;
+	margin-left: -90px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+/**/
+
+/*to_top*/
+.to_top {
+	display: none;
+	content: "";
+	width: 60px;
+	height: 60px;
+	background: url("../img/to_top.png");
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: fixed;
+	right: 20px;
+	bottom: 85px;
+	opacity: 1;
+	transition: all .6 linear;
+}

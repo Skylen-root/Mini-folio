@@ -23,6 +23,10 @@
 		font-size: 1.1em;
 	}
 
+	.top_menu {
+		width: 100%;
+	}
+
 /*
 	.portfolio_gallery .portfolio_gallery_item {
 		width: 50%;
