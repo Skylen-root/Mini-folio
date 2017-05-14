@@ -86,7 +86,6 @@ header
 	right: 0
 	z-index: 1000
 	background-color: #fff
-	border-bottom: 2px solid #e6e6e6
 
 .navbar-line
 	border-bottom: 1px solid #e6e6e6
@@ -109,21 +108,38 @@ header
 .main-navigation 
 	ul
 		list-style: none
-		margin: 0
+		margin: 0 auto
 		padding-left: 0
 		text-align: center
+		width: 800px
 	li 
-		position: relative
 		display: inline-block
 		a
-			margin: 0 26px
+			display: inline-block
+			margin: 0 14px
 			font-size: 18px
 			color: #000
 			vertical-align: middle
 			line-height: 65px
+			position: relative
 			&:hover
 				text-decoration: none
-
+				&:after, &:before
+					opacity: 1
+					transform: translateX(0px)
+			&:after, &:before
+				color: #e6e6e6
+				display: inline-block
+				opacity: 0
+				transition: transform .3s, opasity .2s
+			&:before
+				margin-right: 10px
+				content: '['
+				transform: translateX(15px)
+			&:after
+				margin-left: 10px
+				content: ']'
+				transform: translateX(-15px)
 .collapse
 	display: block
 
@@ -372,39 +388,43 @@ header
 // top slider
 
 .slider-wrap
-	height: 565px
+	height: 506px
 	.features-img
+		height: 506px
+		width: 70%
+		float: left
 		background: no-repeat
 		background-size: cover
 		background-position: center
-		position: absolute
-		right: 380px
-		top: 0
-		bottom: 0
-		left: 0
 		overflow: hidden
 		img
 			width: 100%
 			height: auto
 			min-height: 100%
 	.slider-side
-		width: 380px
+		height: 506px
+		width: 30%
 		float: right
 		.features-content
-			padding: 45px 40px 0
+			height: 100%
+			padding: 45px 40px 80px
 
 .slider-control
-	width: 100%
+	width: 30%
+	position: absolute
+	right: 0
+	bottom: 0
 	.arrow
 		background-color: #fff
 		text-align: center
 		width: 50%
 		color: #a5a5a5
 		border-bottom: 1px solid #a5a5a5
-		border-left: 1px solid #a5a5a5
 		padding: 25px 5px
 		float: left
 		transition: all .3s linear
+		&+.arrow
+			border-left: 1px solid #a5a5a5
 		&:hover
 			background: #e6e6e6
 			text-decoration: none

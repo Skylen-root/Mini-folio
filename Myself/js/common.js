@@ -25,8 +25,10 @@ $(document).ready(function() {
 	$('.portfolio_gallery_img').magnificPopup({
 		delegate: 'a',
 		type: 'image',
-		 gallery:{
-		enabled:true
+		gallery:{
+		enabled:true,
+		overflowY: 'scroll',
+		fixedContentPos: 'false'
 		},
 		zoom: {
 			enabled: true,
@@ -55,36 +57,48 @@ $(document).ready(function() {
 	})
 	//
 
-	//.toggle_menu
-	$(".toggle_menu").click(function(){
-		if ($(".top_menu").is(":visible")) {
-			$(".top_menu").fadeOut(600);
+	//#nav-icon
+
+// $("#nav-icon").click(function() {
+//   $("#nav-icon").toggleClass("open");
+// });
+
+$(window).resize(function() {
+	if ( $(window).width() > 795 ) {
+		$(".top_menu").fadeIn(0);
+	}
+	else {
+		$(".top_menu").fadeOut(0);
+	}
+})
+
+	$("#nav-icon").click(function(){
+		if ( $(".top_menu").is(":visible") ) {
+			// $(".top_menu").fadeOut(600);
+			// $("#nav-icon").toggleClass("open");
 		}
 		else {
-		$(".top_menu").fadeIn(600);
+			$("#nav-icon").toggleClass("open");
+			$(".top_menu").fadeIn(600);
 		};
 	});
 
-	$(".top_menu a").click(function(){
-		$(".top_menu").fadeOut(600);
-		$(".sandwich").toggleClass("active");
+	$(".top_menu a").click(function(){						// клік по пункту меню
+		if ( $(window).width() <= 795 ) {
+			$(".top_menu").fadeOut(600);
+			$("#nav-icon").toggleClass("open");
+		}
 	});
 
-	$(document).mouseup(function (e){
+	$(document).mouseup(function (e){							// клік за межами меню
 		  var container = $(".top_menu");
-			if (!container.is(e.target) && container.has(e.target).length === 0) {
+			if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <= 795) {
 			container.fadeOut(600);
-			if ($(".sandwich").hasClass("active")) {
-				$(".sandwich").toggleClass("active");
-			}
+				if ( $("#nav-icon").hasClass("open") ) {
+					$("#nav-icon").toggleClass("open");
+				}
 		  }
 		});
-
-//
-
-$(".toggle_menu, .menu_item").click(function() {
-  $(".sandwich").toggleClass("active");
-});
 
 
 
@@ -140,4 +154,15 @@ $(window).scroll(function(){
 // 		return false;
 // 	});
 //
+
+
+
+
+
+
+
+
+
+
+
 });

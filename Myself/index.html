@@ -14,13 +14,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/Lato/latofonts.css">
 	<link rel="stylesheet" href="css/main.css" />
+
+	<link rel="stylesheet" href="css/captionhover.css">
+
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<div class="preloader">
 		<div class="preloader_inner"></div>
 	</div>
-	<header id="head" class="main_head" data-parallax="scroll" data-image-src="img/konoplya_happy.jpg" data-z-index="1">
+	<header id="head" class="main_head" data-parallax="scroll" data-image-src="img/konoplya_happy.jpg" data-z-index="0">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -29,13 +32,13 @@
 							
 						</a>
 				</div>
-				<button class="toggle_menu">
-					<span class='sandwich'>
-						<span class='sw-topper'></span>
-						<span class='sw-bottom'></span>
-						<span class='sw-footer'></span>
-					</span>
-				</button>
+				<div id="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				
 				<nav class="top_menu">
 					<ul class="middle">
 						<li><a href="#about">Про мене</a></li>
@@ -45,7 +48,6 @@
 					</ul>
 				</nav>
 				</div>
-				<div class="main_menu"></div>
 			</div>
 		</div>
 		<div class="top_wrap">
@@ -61,6 +63,7 @@
 	</header>
 
 <section id="about" class="sec_about bg_light">
+				
 	<div class="sec_header">
 		<h2>Про мене</h2>
 		<div class="descr_wrap">
@@ -81,7 +84,7 @@
 				<div class="col-md-4 col-md-pull-4">
 					<h3><i class="fa fa-university" aria-hidden="true"></i>Професійні навички</h3>
 					<ul>
-						<li>HTML, CSS, Bootstrap 3, jQuery</li>
+						<li>HTML, CSS, Bootstrap 3, jQuery, адаптивна/валідна верстка</li>
 						<li>Базові знання PHP, SQL, JavaScript, WordPress, Joomla</li>
 						<li>Photoshop (робота з макетами)</li>
 						<li>Знайомий з Gulp, Sass</li>
@@ -90,7 +93,6 @@
 					<ul>
 						<li>Відповідальний, комунікабельний, доброзичливий, цілеспрямований</li>
 						<li>Стійкий до стресових ситуацій.</li>
-						<li>Готовий до навчання та професійного зростання.</li>
 						<li>Шкідливих звичок не маю.</li>
 					</ul>
 				</div>
@@ -117,7 +119,7 @@
 	<div class="sec_header">
 		<h2>Резюме</h2>
 		<div class="descr_wrap">
-			<div class="descr">Трішки історії</div>
+			<div class="descr">Досвід роботи та освіта</div>
 		</div>
 	</div>
 	<div class="sec_content">
@@ -172,59 +174,112 @@
 		</div>
 	</div>
 </section>
-<section id="portfolio" class="sec_portfolio bg_dark">
+
+
+
+
+<section id="portfolio" class="sec_portfolio" data-parallax="scroll" data-image-src="img/bg-grid.jpg" data-z-index="2" data-speed="0">
 	<div class="sec_header">
 		<h2>Приклади робіт</h2>
 		<div class="descr_wrap">
-			<div class="descr">Мої роботи</div>
+			<div class="descr">Сторінки</div>
 		</div>
 	</div>
 	<div class="sec_content">
 		<div class="container">
 			<div class="row">
-				
+
 					<div class="portfolio_gallery">
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../Coderiver/index.html">Coderiver</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/coderiver.jpg"><img src="img/coderiver.jpg" alt="coderiver"></a>
-							</div>
+
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/examen.jpg" alt="examen">
+								</div>
+								<figcaption>
+									<h4>Examen</h4>
+									<a href="../examen/index.html" class="button-go">Перейти</a>
+									<a href="img/examen.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../Examen/index.html">Examen</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/examen.jpg"><img src="img/examen.jpg" alt="examen"></a>
-							</div>
+
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/landing.jpg" alt="landing">
+								</div>
+								<figcaption>
+									<h4>Landing</h4>
+									<a href="../Landing/index.html" class="button-go">Перейти</a>
+									<a href="img/landing.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../Landing/index.html">Landing</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/landing.jpg"><img src="img/landing.jpg" alt="landing"></a>
-							</div>
+						
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/office.jpg" alt="office">
+								</div>
+								<figcaption>
+									<h4>Office</h4>
+									<a href="../office/index.html" class="button-go">Перейти</a>
+									<a href="img/office.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../Office/index.html">Office</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/office.jpg"><img src="img/office.jpg" alt="office"></a>
-							</div>
+						
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/medicine.jpg" alt="medicine">
+								</div>
+								<figcaption>
+									<h4>Medicine</h4>
+									<a href="../medicine/index.html" class="button-go">Перейти</a>
+									<a href="img/medicine.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../medicine/index.html">Medicine</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/medicine.jpg"><img src="img/medicine.jpg" alt="medicine"></a>
-							</div>
+
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/onlystrap.jpg" alt="onlystrap">
+								</div>
+								<figcaption>
+									<h4>Onlystrap</h4>
+									<a href="../onlystrap/index.html" class="button-go">Перейти</a>
+									<a href="img/onlystrap.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../Madison/index.html">Madison</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/madison.jpg"><img src="img/madison.jpg" alt="madison"></a>
-							</div>
+						
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/transworld.jpg" alt="transworld">
+								</div>
+								<figcaption>
+									<h4>Transworld</h4>
+									<a href="../transworld/index.html" class="button-go">Перейти</a>
+									<a href="img/transworld.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
-						<div class="col-md-3 col-sm-6 portfolio_gallery_item">
-							<h4><a href="../onlystrap/index.html">Onlystrap</a></h4>
-							<div class="portfolio_gallery_img">
-								<a href="img/onlystrap.jpg"><img src="img/onlystrap.jpg" alt="onlystrap"></a>
-							</div>
+						
+						<div class="col-md-4 col-sm-6 portfolio_gallery_item">
+							<figure>
+								<div class="figure-img-wrap">
+									<img src="img/coderiver.jpg" alt="coderiver">
+								</div>
+								<figcaption>
+									<h4>Coderiver</h4>
+									<a href="../Coderiver/index.html" class="button-go">Перейти</a>
+									<a href="img/coderiver.jpg" class="popup button-img">Zoom</a>
+								</figcaption>
+							</figure>
 						</div>
 					</div>
 				
@@ -237,7 +292,7 @@
 	<div class="sec_header">
 		<h2>Шаблони</h2>
 		<div class="descr_wrap">
-			<div class="descr">Натяжка на Wordpress</div>
+			<div class="descr">Wordpress</div>
 		</div>
 	</div>
 	<div class="container">

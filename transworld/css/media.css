@@ -62,13 +62,16 @@
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .menu-container ul {
+  .main-navigation {
+    border-bottom: 3px solid #e6e6e6;
+  }
+  .main-navigation ul {
     text-align: left;
   }
-  .menu-container ul li {
+  .main-navigation ul li {
     display: block;
   }
-  .menu-container ul li a {
+  .main-navigation ul li a {
     line-height: 50px;
   }
   .collapse {

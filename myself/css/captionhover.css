@@ -1,0 +1,80 @@
+.portfolio_gallery_item figure {
+	margin: 0;
+	position: relative;
+	box-shadow: 0 0 20px 6px #aaa;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	border-radius: 0;
+	overflow: hidden;
+}
+
+.portfolio_gallery_item figure:hover {
+	box-shadow: 0 0 20px 6px rgb(98,85,249);
+	transition-property: box-shadow;
+	transition-delay: .2s;
+}
+
+.portfolio_gallery_item figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.portfolio_gallery_item figcaption {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	padding: 20px;
+	//background: #257b7b;
+	background-color: rgba(0,0,0, .8);
+	color: #ed4e6e;
+}
+
+.portfolio_gallery_item figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	margin: 5px;
+	width: 100px;
+	display: inline-block;
+	background: rgb(98,85,249);
+	color: #fff;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	border-radius: 0;
+}
+
+.portfolio_gallery_item figcaption a:hover {
+	box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px rgb(98, 85, 249);
+}
+
+.portfolio_gallery_item figcaption {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	text-align: center;
+	backface-visibility: hidden;
+	transition: left 0.3s, opacity 0.3s;
+}
+
+.portfolio_gallery_item figure:hover figcaption {
+    opacity: 1;
+		left: 0;
+}
+
+figcaption h4 {
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-top: 55px;
+}
+
+.cs-style-1 figcaption span {
+	display: block;
+}
+
+.cs-style-1 figcaption a {
+	margin-top: 30px;
+}

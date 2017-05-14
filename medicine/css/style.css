@@ -122,7 +122,6 @@ h2 {
 }
 
 .nav_top ul li a {
-	text-shadow: 0px 0px 5px #123123;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -138,7 +137,6 @@ h2 {
 
 .list_left_bar {
 	margin: 5px 0 0 55px;
-	list-style-image: url(list_style.png);
 }
 
 .left_bar_cap {
@@ -256,7 +254,7 @@ footer {
 	padding: 30px 30px 50px 80px;
 	position: relative;
 	width: 100%;
-	height: 120px;
+	height: 100px;
 	background-color: rgb(53,118,110);
 }
 
@@ -307,7 +305,6 @@ footer ul li a {
 .service li {
 	margin-bottom: 15px;
 	margin-left: 21px;
-	list-style-image: url(ok.png);
 }
 
 .service a {

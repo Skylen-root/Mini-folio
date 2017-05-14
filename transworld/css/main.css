@@ -102,7 +102,6 @@ header {
   right: 0;
   z-index: 1000;
   background-color: #fff;
-  border-bottom: 2px solid #e6e6e6;
 }
 
 .navbar-line {
@@ -129,26 +128,61 @@ header {
 
 .main-navigation ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 0;
   text-align: center;
+  width: 800px;
 }
 
 .main-navigation li {
-  position: relative;
   display: inline-block;
 }
 
 .main-navigation li a {
-  margin: 0 26px;
+  display: inline-block;
+  margin: 0 14px;
   font-size: 18px;
   color: #000;
   vertical-align: middle;
   line-height: 65px;
+  position: relative;
 }
 
 .main-navigation li a:hover {
   text-decoration: none;
+}
+
+.main-navigation li a:hover:after, .main-navigation li a:hover:before {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.main-navigation li a:after, .main-navigation li a:before {
+  color: #e6e6e6;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: opasity .2s, -webkit-transform .3s;
+  transition: opasity .2s, -webkit-transform .3s;
+  transition: transform .3s, opasity .2s;
+  transition: transform .3s, opasity .2s, -webkit-transform .3s;
+}
+
+.main-navigation li a:before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(15px);
+      -ms-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.main-navigation li a:after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-15px);
+      -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
 }
 
 .collapse {
@@ -467,18 +501,16 @@ header {
 }
 
 .slider-wrap {
-  height: 565px;
+  height: 506px;
 }
 
 .slider-wrap .features-img {
+  height: 506px;
+  width: 70%;
+  float: left;
   background: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  right: 380px;
-  top: 0;
-  bottom: 0;
-  left: 0;
   overflow: hidden;
 }
 
@@ -489,16 +521,21 @@ header {
 }
 
 .slider-wrap .slider-side {
-  width: 380px;
+  height: 506px;
+  width: 30%;
   float: right;
 }
 
 .slider-wrap .slider-side .features-content {
-  padding: 45px 40px 0;
+  height: 100%;
+  padding: 45px 40px 80px;
 }
 
 .slider-control {
-  width: 100%;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .slider-control .arrow {
@@ -507,11 +544,14 @@ header {
   width: 50%;
   color: #a5a5a5;
   border-bottom: 1px solid #a5a5a5;
-  border-left: 1px solid #a5a5a5;
   padding: 25px 5px;
   float: left;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+}
+
+.slider-control .arrow + .arrow {
+  border-left: 1px solid #a5a5a5;
 }
 
 .slider-control .arrow:hover {
