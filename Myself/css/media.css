@@ -1,4 +1,4 @@
-@media only screen and (max-width: 795px) {
+@media only screen and (max-width: 768px) {
 	.top_wrap .top_text h1 {
 		font-size: 2.3em;
 		padding: 10px 20px;
@@ -234,27 +234,27 @@
 	  top: 36px;
 	}
 
-	#nav-icon.open span:nth-child(1) {
+	#nav-icon.close span:nth-child(1) {
 	  top: 18px;
 	  width: 0%;
 	  left: 50%;
 	}
 
-	#nav-icon.open span:nth-child(2) {
+	#nav-icon.close span:nth-child(2) {
 	  -webkit-transform: rotate(45deg);
 	  -moz-transform: rotate(45deg);
 	  -o-transform: rotate(45deg);
 	  transform: rotate(45deg);
 	}
 
-	#nav-icon.open span:nth-child(3) {
+	#nav-icon.close span:nth-child(3) {
 	  -webkit-transform: rotate(-45deg);
 	  -moz-transform: rotate(-45deg);
 	  -o-transform: rotate(-45deg);
 	  transform: rotate(-45deg);
 	}
 
-	#nav-icon.open span:nth-child(4) {
+	#nav-icon.close span:nth-child(4) {
 	  top: 18px;
 	  width: 0%;
 	  left: 50%;

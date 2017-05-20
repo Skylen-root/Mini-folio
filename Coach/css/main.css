@@ -1,0 +1,194 @@
+body {
+	font-family: "PT Sans", sans-serif;
+	
+}
+.hidden {
+	display: none;
+}
+
+
+p {
+	font-size: 24px;
+	line-height: 1.2;
+	color: rgb(43, 46, 53);
+}
+
+/**/
+
+.logo-description {
+	font-family: "PT Sans", sans-serif;
+	font-size: 27px;
+}
+
+
+/*BUTTON*/
+.btn {
+	background-color: #ff621f;
+	color: #fff;
+	border: none;
+	border-radius: 0;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.btn-default {
+	font-size: 30px;
+	padding: 22px 39px 18px 65px;
+	margin: 30px 0 38px 0;
+	border-bottom: 5px solid #ff332a;
+}
+
+.btn-big {
+	padding: 0;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	font-size: 48px;
+	line-height: 100px;
+	margin-bottom: 45px;
+	border-bottom: 8px solid #ff332a;
+}
+/*BUTTON END*/
+
+.s_top-info {
+ font-family: "Circe Bold";
+}
+
+.s_top-info h2 {
+	font-size: 38px;
+	color: #ff621f;
+	margin-bottom: 40px;
+}
+
+.s_top-info p {
+	font-size: 30px;
+}
+
+
+.column-l {
+	background-color: #ff6633;
+	color: #fff;
+	vertical-align: top;
+	//padding-top: 38px;
+	//padding-left: 32px;
+}
+
+.column-l ul {
+	padding-left: 50px;
+	font-size: 18px;
+}
+
+.column-l ul li {
+	margin-bottom: 25px;
+}
+
+
+
+.column-r {
+	background-color: #eaeaea;
+	color: #2b2e35;
+	vertical-align: top;
+	//padding-top: 36px;
+	padding-left: 23px;
+}
+
+
+.speaker-img {
+	margin-top: 55px;
+	margin-bottom: 25px;
+}
+
+.custom-list {
+	list-style: none;
+	padding-left: 40px;
+}
+
+.custom-list li {
+	position: relative;
+	margin-bottom: 35px;
+	font-size: 24px;
+}
+
+.custom-list li:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -35px;
+	top: 9px;
+	width: 21px;
+	height: 17px;
+	background: url(../img/list.png);
+	background-size: cover;
+}
+
+
+
+/*timer*/
+.custom-timer {
+	margin-bottom: 40px;
+	font-family: "Circe Bold";
+	text-align: center;
+}
+
+.timer-item {
+	display: inline-block;
+}
+
+.timer-item + .timer-item {
+	margin-left: 7px;
+}
+
+.timer-item .num {
+ width: 67px;
+ height: 67px;
+ margin-bottom: 11px;
+ border-radius: 10px;
+ background-color: #2b2e35;
+ color: #fff;
+ font-size: 48px;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 72px;
+}
+
+.num + div {
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+}
+/*timer END*/
+
+.time-left {
+	font-size: 21px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.list-title {
+	font-size: 24px;
+	margin-bottom: 70px;
+}
+
+.no-padd {
+	padding: 0;
+}
+
+.table {
+	display: table;
+	width: auto;
+	margin: 0;
+}
+
+.table-row {
+	display: table-row;
+	margin: 0 -15px;
+}
+
+.table-cell {
+	display: table-cell;
+	width: 50%;
+	padding-top: 36px;
+	padding-left: 32px;
+	padding-right: 23px;
+}

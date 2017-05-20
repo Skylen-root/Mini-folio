@@ -1,0 +1,37 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .head, .upperHead {
+    padding: 0 10px;
+  }
+  .nav-toggle {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #31363c;
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 9px 15px 9px 15px;
+    margin: 10px;
+    line-height: 1;
+  }
+  .nav-toggle:hover {
+    color: #fff;
+  }
+  .nav {
+    position: absolute;
+    z-index: 10;
+  }
+  .nav ul li {
+    float: none;
+  }
+  .nav ul li a {
+    display: block;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

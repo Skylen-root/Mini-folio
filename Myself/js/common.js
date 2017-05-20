@@ -60,42 +60,51 @@ $(document).ready(function() {
 	//#nav-icon
 
 // $("#nav-icon").click(function() {
-//   $("#nav-icon").toggleClass("open");
+//   $("#nav-icon").toggleClass("close");
 // });
 
-$(window).resize(function() {
-	if ( $(window).width() > 795 ) {
-		$(".top_menu").fadeIn(0);
-	}
-	else {
-		$(".top_menu").fadeOut(0);
-	}
-})
+	// $(window).resize(function() {
+	// 	if ( $(window).width() > 768 ) {
+	// 		$(".top_menu").fadeIn(0);
+	// 	}
+	// 	else {
+	// 		$(".top_menu").fadeOut(0);
+	// 	}
+	// })
+
 
 	$("#nav-icon").click(function(){
 		if ( $(".top_menu").is(":visible") ) {
 			// $(".top_menu").fadeOut(600);
-			// $("#nav-icon").toggleClass("open");
+			// $("#nav-icon").toggleClass("close");
 		}
 		else {
-			$("#nav-icon").toggleClass("open");
+			$("#nav-icon").toggleClass("close");
 			$(".top_menu").fadeIn(600);
 		};
 	});
 
 	$(".top_menu a").click(function(){						// клік по пункту меню
-		if ( $(window).width() <= 795 ) {
-			$(".top_menu").fadeOut(600);
-			$("#nav-icon").toggleClass("open");
+		if ( $(window).width() <= 768 ) {
+			$(".top_menu").fadeOut(600, function() {
+				if ( $(this).css('display') === 'none' ) {
+					$(this).removeAttr("style");
+				}
+			});
+			$("#nav-icon").toggleClass("close");
 		}
 	});
 
 	$(document).mouseup(function (e){							// клік за межами меню
 		  var container = $(".top_menu");
-			if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <= 795) {
-			container.fadeOut(600);
-				if ( $("#nav-icon").hasClass("open") ) {
-					$("#nav-icon").toggleClass("open");
+			if (!container.is(e.target) && container.has(e.target).length === 0 && $(window).width() <= 768) {
+			container.fadeOut(600, function() {
+				if ( $(this).css('display') === 'none' ) {
+					$(this).removeAttr("style");
+				}
+			});
+				if ( $("#nav-icon").hasClass("close") ) {
+					$("#nav-icon").toggleClass("close");
 				}
 		  }
 		});
