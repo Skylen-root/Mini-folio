@@ -24,6 +24,19 @@ $('.slide-nav').click (
 	}
 );
 
+// Slider top
+
+$('.slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	fade: true,
+	infinite: true,
+	adaptiveHeight: true,
+	focusOnSelect: true,
+});
+
 //  Slider Testimonials
 
 $('.slider-testimonials').slick({
@@ -34,8 +47,19 @@ $('.slider-testimonials').slick({
 	centerMode: true,
 	infinite: true,
 	variableWidth: true,
+	adaptiveHeight: true,
 	focusOnSelect: true,
-	asNavFor: '.slider-testimonials-nav'
+	asNavFor: '.slider-testimonials-nav',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				adaptiveHeight: true,
+				variableWidth: false,
+				centerMode: false
+			}
+		}
+	]
 });
 $('.slider-testimonials-nav').slick({
 	slidesToShow: 1,
@@ -68,6 +92,6 @@ $('.slider-testimonials-nav').slick({
 	});
 
 	$(".toggle_menu, .menu_item").click(function() {
-	  $(".sandwich").toggleClass("active");
+		$(".sandwich").toggleClass("active");
 	});
 //**************************
