@@ -1,0 +1,329 @@
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border: none
+
+body
+	background-image: url("../img/wood.jpg")
+	background-repeat: repeat
+	width: 100%
+
+.content-wrap
+	.container
+		background-color: #dedad3
+
+
+.header
+	.container
+		//padding: 0
+
+// LOGO
+.undernav
+	height: 150px
+	background-color: #dedad3
+	background-image: url("../img/undernav.png")
+
+.logo
+	color: #6b3b25
+	text-align: center
+	margin-top: 35px
+	overflow: hidden
+	float: left
+
+.logo-name
+	font-size: 85px
+	color: inherit
+	font-family: 'Franchise'
+	text-transform: uppercase
+	line-height: .9
+	margin-bottom: 7px
+	&:hover
+		text-decoration: none
+		color: inherit
+
+.logo-description
+	position: relative
+	text-align: center
+	line-height: 1
+	&:before
+		position: absolute
+		content: ""
+		background-color: #6b3b25
+		width: 100%
+		height: 1px
+		top: 50%
+		margin-left: -100%
+	&:after
+		position: absolute
+		content: ""
+		background-color: #6b3b25
+		width: 100%
+		height: 1px
+		top: 50%
+
+.logo-description-wrap
+	display: inline-block
+	font-family: "Tahoma"
+	font-size: 14px
+	text-transform: uppercase
+	margin: 0 7px
+	
+// Social button
+
+.social-button
+	float: right
+	margin: auto
+	margin-top: 60px
+	a
+		color: #6b3b25
+		margin-left: 12px
+		&:hover
+			text-decoration: none
+			color: #e09402
+	
+// HEADER navigation
+
+.navbar
+	border: none
+	border-radius: 0
+
+.navbar-default
+	background-color: #e09402
+	border-top: 3px solid #f6a201
+	border-bottom: 3px solid #c88401
+	box-shadow: 0 5px 0 0 rgba(0,0,0, .11)
+	color: #ebe6df
+	margin-bottom: 0
+	.navbar-header
+		height: 59px
+	.navbar-nav
+		background-color: #e09402
+	.navbar-nav > li > a
+		line-height: 59px
+		padding: 0 14px
+		color: #ebe6df
+		text-transform: uppercase
+		font-size: 16px
+		font-family: "Lato Black"
+		text-shadow: 0 2px 0 rgba(148,97,0, .34)
+		&:focus, &:hover
+			color: #ebe6df
+	.navbar-nav > li.active > a
+		color: #ebe6df
+		background-color: #62493d
+	.navbar-nav > li > a
+		&:focus, &:hover
+			color: #ebe6df
+			background-color: #62493d
+
+.navbar-toggle
+	margin-top: 12px
+
+// HEADER navigation END
+
+// SECTION
+
+.section_header
+	position: relative
+	color: #6b3b25
+	h3
+		margin: 0
+		text-transform: uppercase
+		font-family: "Lato Black"
+		font-size: 18px
+		border-top: 4px solid #6b3b25
+		border-bottom: 1px solid #6b3b25
+		line-height: 47px
+	.view-all
+		color: #6b3b25
+		position: absolute
+		right: 0
+		top: 50%
+		font-family: "ArvoRegular"
+		font-size: 14px
+		margin-top: -7px
+		margin-right: 3px
+		text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
+
+// section video
+
+.section-video
+	.section_header
+		margin-bottom: 11px
+	h2
+		font-family: "Lato Black"
+		font-size: 21px
+		margin: 18px 0 15px
+		color: #6b3b25
+	p
+		font-family: "ArvoRegular"
+		color: #6b3b25
+		font-size: 16px
+
+// FEATURED WORK
+
+.showcase
+	text-transform: uppercase
+	font-family: "Lato Black"
+	font-size: 36px
+	text-align: center
+	line-height: 1.1
+	color: #6b3b25
+	text-shadow: 0px 1px 0px rgb( 255, 255, 255 )
+	margin: 46px 0
+
+.read
+	display: inline-block
+	margin-top: 25px
+	margin-bottom: 65px
+	padding: 8px
+	color: #fff
+	background-color: #e09402
+	box-shadow: 3px 4px 0 0 rgba(0,0,0, 0.1)
+	border-width: 4px
+	border-style: solid
+	border-image: linear-gradient(to top, rgba(199, 131, 1, 1), rgba(246, 162, 1, 1)) 2 1 round round;
+	&:hover
+		text-decoration: none
+		border: 4px solid #fff
+		color: #fff
+		box-shadow: inset 3px 4px 0 0 rgba(0,0,0, 0.1)
+
+.featured_post
+	margin-top: 27px
+	h2
+		text-transform: uppercase
+		color: #6b3b25
+		font-family: "Lato Black"
+		font-size: 24px
+	p
+		color: #6b3b25
+		font-size: 16px
+		font-family: "ArvoRegular"
+
+.featured_img
+	border: 5px solid #fff
+	height: 372px
+	background-color: #d66c27
+	overflow: hidden
+
+
+
+// RECENT POST
+
+.recent-post_post
+	border-bottom: 1px solid rgba(107,59,37, .3)
+	font-family: "Lato Black"
+	padding: 13px 2px 10px
+	&:last-child
+		border: none
+	a
+		font-size: 21px
+		color: #6b3b25
+		margin-bottom: 6px
+		line-height: 1
+		text-decoration: none
+
+	.meta
+		font-size: 14px
+		color: #c78301
+		line-height: 1
+	.date
+		font-family: "Lato"
+
+	
+
+
+// Footer
+
+.bottom-padding
+	padding-bottom: 60px
+
+footer
+	.bgc-footer
+		padding-top: 15px
+		padding-bottom: 25px
+		border-top: 3px solid #e09402
+		position: relative
+		background-color: #543f34
+		background: linear-gradient(to bottom, rgba(84,63,52,1) 0%, rgba(92,69,57,1) 50%, rgba(66,49,41,1) 100%)
+		.up
+			background-image: url("../img/footer-up.png")
+			position: absolute
+			left: 50%
+			top: -42px
+			width: 46px
+			height: 48px
+			margin-left: -23px
+			z-index: 100
+		.bgc-footer-img
+			width: 100%
+			height: 100%
+			position: absolute
+			background-image: url("../img/bg-footer-img.png")
+
+.footer-content
+	h3
+		font-size: 18px
+		text-transform: uppercase
+		color: #e09402
+		font-family: "Lato Black"
+		text-shadow: 0px -1px 0px rgb( 0, 0, 0 )
+	p
+		font-family: "ArvoRegular"
+		color: #e7d7ba
+
+.row-copyright
+	position: relative
+	background-color: #62493d
+	background-image: url("../img/copyright-bg.png")
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		width: 100%
+		height: 9px
+		background-color: #5a453b
+		border-top: 1px solid #644d42
+		border-bottom: 1px solid #523f35
+
+.copyright
+	text-align: center
+	line-height: 85px
+	vertical-align: middle
+	color: #e09402
+	text-shadow: 0px -1px 0px rgb( 0, 0, 0 )
+	 font-family: "Tahoma"
+
+
+
+
+
+
+
+@media (max-width: 768px)
+	.undernav
+		height: initial
+	.logo-name
+		font-size: 60px
+	.logo
+		float: none
+		margin: 5px -15px
+		text-align: center
+	.social-button
+		position: absolute
+		top: 26px
+		z-index: 100
+		float: left
+		text-align: center
+		a:first-child
+			margin-left: 0
+
+
+
+@media (min-width: 1200px)
+	.container 
+		width: 970px
+

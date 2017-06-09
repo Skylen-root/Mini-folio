@@ -1,0 +1,78 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+	body
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	body
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+	.head, .upperHead
+		padding: 0 10px
+
+	.nav-toggle
+		display: inline-block
+		text-transform: uppercase
+		background-color: #31363c
+		color: #fff
+		border: none
+		border-radius: 5px
+		padding: 7px 10px 7px 10px
+		margin: 10px
+		line-height: 1
+		&:hover
+			color: #fff
+		span
+			width: 26px
+			height: 3px
+			background-color: #FFF
+			display: block
+			margin: 5px
+		&:hover, &:focus
+			background-color: #fff
+			span
+				background-color: #31363c
+	.nav
+		display: none
+		position: absolute
+		z-index: 10
+		ul
+			li
+				float: none
+				a
+					display: block
+
+
+
+
+	.search
+		.search__area
+			display: none
+		.search__btn
+			display: none
+		.fa-search
+			display: inline-block
+			color: #fff
+			border-radius: 50%
+			width: 33px
+			height: 33px
+			line-height: 33px
+			text-align: center
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	body
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+	body
+
+

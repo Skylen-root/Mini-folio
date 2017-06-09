@@ -1,0 +1,67 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .head, .upperHead {
+    padding: 0 10px;
+  }
+  .nav-toggle {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #31363c;
+    color: #fff;
+    border: none;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 7px 10px 7px 10px;
+    margin: 10px;
+    line-height: 1;
+  }
+  .nav-toggle:hover {
+    color: #fff;
+  }
+  .nav-toggle span {
+    width: 26px;
+    height: 3px;
+    background-color: #FFF;
+    display: block;
+    margin: 5px;
+  }
+  .nav-toggle:hover, .nav-toggle:focus {
+    background-color: #fff;
+  }
+  .nav-toggle:hover span, .nav-toggle:focus span {
+    background-color: #31363c;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 10;
+  }
+  .nav ul li {
+    float: none;
+  }
+  .nav ul li a {
+    display: block;
+  }
+  .search .search__area {
+    display: none;
+  }
+  .search .search__btn {
+    display: none;
+  }
+  .search .fa-search {
+    display: inline-block;
+    color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

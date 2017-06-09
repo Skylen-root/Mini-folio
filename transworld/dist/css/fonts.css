@@ -1,0 +1,14 @@
+/* font-family: "ArvoRegular" */
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/karla/Karla-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/karla/Karla-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}

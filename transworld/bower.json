@@ -1,0 +1,29 @@
+{
+  "name": "transworld",
+  "description": "transworld with gulp",
+  "main": "index.html",
+  "authors": [
+    "Skylen"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "desandro-matches-selector": "~2.0.0",
+    "fizzy-ui-utils": "^2.0.0",
+    "imagesloaded": "^4.1.1",
+    "get-size": "^2.0.2",
+    "font-awesome": "fontawesome#^4.7.0",
+    "imagefill": "*",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.2.1"
+  }
+}

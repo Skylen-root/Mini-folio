@@ -248,6 +248,7 @@ section h2 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #333;
+	margin: 16px 0;
 }
 
 #about h3 > .fa {
@@ -467,4 +468,5 @@ footer .social ul {
 	bottom: 85px;
 	opacity: 1;
 	transition: all .6 linear;
+	z-index: 40;
 }

@@ -1,0 +1,368 @@
+html
+	font-size: 13px
+	font-family: "Georgia"
+
+body
+	font-size: 13px
+	font-family: "Georgia"
+
+
+p
+	line-height: 21px
+
+.upperHead
+	background-color: #373c42
+
+.head
+	background-color: #4c555e
+	height: 270px
+	padding-bottom: 130px
+
+.underHead-wrap
+	margin-top: -130px
+
+.bgc-white
+	background-color: #FFF
+
+
+// LOGO
+.logo
+	margin-top: 45px;
+	float: left
+	.logo__text
+		font-size: 26px
+		color: #fff
+	.logo__description
+		font-size: 12px
+		color: #999999
+
+// LOGO END
+
+.search
+	float: right
+	margin-top: 58px;
+	background-color: #65717c
+	border-radius: 5px
+	.fa-search
+		display: none
+	.search__area
+		background-color: #65717c
+		font-size: 12px
+		color: #fff
+		padding: 0 10px
+		height: 33px
+		width: 220px
+		border-bottom-left-radius: 5px
+		border-top-left-radius: 5px
+		border: none
+		&:focus
+			outline: none
+		&::placeholder
+			color: #fff
+		&:placeholder
+			color: #fff
+	.search__btn
+		background-color: #31363c
+		font-size: 12px
+		color: #fff
+		height: 33px
+		padding: 0 12px
+		text-transform: uppercase
+		border-bottom-right-radius: 5px
+		border-top-right-radius: 5px
+		border: none
+		transition: background .2s linear
+		&:hover
+			background-color: #c8232c
+
+// SOCIAL
+.social
+	a
+		width: 32px
+		margin: 9px 0
+		margin-right: 10px
+		display: inline-block
+		border-radius: 50%
+		background-color: #4c555e
+		text-align: center
+		line-height: 32px
+		transition: background .2s linear
+		&:hover
+			background-color: #c8232c
+		.fa
+			color: #fff
+			line-height: 1em
+// SOCIAL END
+
+// nav
+
+.nav-toggle
+	display: none
+
+.nav-wrap
+	width: 100%
+
+.nav
+	width: 100%
+	ul
+		background-color: #31363c
+		list-style: none
+		margin: 0
+		padding: 0
+		border-top-left-radius: 3px
+		border-top-right-radius: 3px
+		overflow: hidden
+		li
+			float: left
+			border: none
+			a
+				text-transform: uppercase
+				color: #fff
+				font-size: 12px
+				padding: 0 15px
+				line-height: 50px
+				display: inline-block
+				&:hover
+					text-decoration: none
+					background-color: #202326
+				&:focus
+					text-decoration: none
+		.active
+			background-color: #202326
+		&:after
+			content: ""
+			display: block
+			clear: both
+// nav END
+
+// SLIDER
+.slider-wrap
+	width: 100%
+	border: 1px solid #e2e2e2
+	padding: 9px
+	margin-top: 30px
+	.owl-carousel
+		position: relative
+		// height: 350px
+		// max-width: 880px
+		margin: 0 auto
+		.owl-dots
+			position: absolute
+			right: 10px
+			bottom: 20px
+			.owl-dot
+				display: inline-block
+				margin: 0 2px
+				width: 15px
+				height: 15px
+				border: 3px solid #fff
+				border-radius: 50%
+				background-color: #fff
+			.active
+				background-color: transparent
+		img
+			width: 100%
+			height: auto
+
+
+// SLIDER END
+
+
+
+.service
+	margin-top: 50px
+	margin-bottom: 45px
+	text-align: center
+	.service__title
+		font-size: 18px
+		color: #4c555e
+		margin-bottom: 18px
+	.service__text
+		font-size: 13px
+		line-height: 20.8px
+		color: #7f7d77
+
+
+
+.quote
+	blockquote
+		font-style: italic
+		font-size: 22px
+		color: #7f7d77
+		text-align: center
+		border-top: 5px solid #eee
+		border-bottom: 5px solid #eee
+		border-left: none
+		padding-top: 20px
+		padding-bottom: 20px
+
+
+.latest
+	padding-top: 50px
+	color: #7f7d77
+	.latest__header
+		font-size: 18px
+		margin-bottom: 16px
+	p
+	 font-size: 13px
+
+.latestItem
+	font-size: 13px
+	margin-bottom: 46px
+	&__thumb
+		width: 100%
+		margin-bottom: 23px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			padding-top: 66.6%
+			height: 0
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+	&__text
+		line-height: 18px
+		font-size: 13px
+		color: #7f7d77
+		margin-bottom: 16px
+	&__link
+		color: #4c555e
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+	background-color: #ededed
+	border-top: 5px solid #e2e2e2
+	padding-top: 29px
+
+.line-bot
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		border-top: 1px solid #bcbcbc
+		border-bottom: 1px solid #fff
+
+
+.widgetBlock
+	margin-bottom: 25px
+	h3
+		font-size: 12px
+		text-transform: uppercase
+		color: #7f7d77
+		margin: 0
+		margin-bottom: 20px
+	p
+		font-size: 13px
+		margin-bottom: 12px
+
+
+.read
+	color: #4c555e
+	font-size: 13px
+	&:after
+		content: "»"
+		display: inline
+		margin-left: 5px
+		font-size: 18px
+		line-height: 1
+
+
+.post
+	color: #7f7d77
+	&__title
+		margin: 0
+		font-size: 14px
+		line-height: 17px
+		a
+			color: inherit
+	&__date
+		display: inline-block
+		font-size: 10px
+		margin-bottom: 7px
+	&__text
+		margin-bottom: 10px
+		line-height: 21px
+
+
+.widgetBlock
+	p
+		color: #7f7d77
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			margin: 0
+			margin-bottom: 4px
+			padding-bottom: 4px
+			border-bottom: 1px solid #ddd
+			&:before
+				content: "»"
+				display: inline
+				margin-right: 10px
+			a
+				color: #4c555e
+				font-size: 12px
+
+
+
+form.newsletter
+	font-size: 13px
+	input
+		background-color: #FFF
+		color: #807d77
+		height: 31px
+		border: none
+		border-radius: 5px
+		box-shadow: none
+		outline: none
+		padding: 0 10px
+		width: 100%
+		margin-bottom: 10px
+	.btn-submit
+		text-transform: uppercase
+		background-color: #4c555e
+		color: #fff
+		border: none
+		border-radius: 5px
+		padding: 9px 15px 9px 15px
+		line-height: 1
+		transition: background .2s linear
+		&:hover
+			background-color: #c8232c
+
+
+
+
+
+.contact-info
+	font-size: 12px
+	line-height: 19px
+	margin: 0

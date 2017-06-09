@@ -1,0 +1,575 @@
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border: none
+
+body
+	font-family: "Century Gothic"
+	background-color: #f6f6f6
+
+.container
+	max-width: 1395px
+	margin: 0 auto
+	height: 100%
+	position: relative
+	&:after
+		display: block
+		content: ""
+		clear: both
+
+
+.header
+	.logo
+		line-height: 160px
+		display: inline-block
+		img
+			height: 65px
+			width: auto
+			vertical-align: middle
+			margin: 0 20px
+	.navigation
+		margin-top: 48px
+
+
+// navigation - top
+.navigation
+	float: right
+	li
+		float: left
+		list-style: none
+		&+li
+			margin-left: 55px
+	a
+		font-family: "Code"
+		font-size: 16px
+		text-transform: uppercase
+		text-decoration: none
+		color: #000
+		padding: 26px 15px
+		display: inline-block
+		&:hover, &.nav-active
+			background-color: #ffea00
+
+.toggle_menu
+	display: none;
+
+// navigation - bottom
+.navigation-bottom
+	a
+		color: #fff
+		&:hover, &.nav-active
+			background-color: initial
+
+// slider-main
+.slider-main
+	overflow: hidden
+	height: 700px
+	.slick-slide
+		height: 700px
+	.slick-prev, .slick-next
+		height: 100px
+		z-index: 10
+	.slick-prev
+		left: 0
+	.slick-next
+		right: 0
+	.slick-dots
+		bottom: 17px
+		li
+			background-color: #414146
+			width: 26px
+			height: 26px
+			margin: 1px
+			&:hover
+				background-color: #414146
+				border: 3px solid #ffea00
+			button
+				display: none
+		.slick-active
+			background-color: #ffea00
+			border: 3px solid #414146
+	img
+		width: 100%
+		z-index: -1
+	.slide-content
+		margin-left: 50px
+		margin-top: 10%
+		width: 50%
+		h1
+			color: #000
+			font-size: 70px
+			text-transform: uppercase
+			font-weight: normal
+			font-weight: normal
+			span
+				background-color: #ffea00
+				padding: 0 13px
+				margin-bottom: 7px
+		.slide-description
+			margin-top: 14px
+			p
+				color: #fff
+				background-color: #414146
+				display: inline-block
+				font-size: 24px
+				margin-bottom: 1px
+				padding: 0 5px
+		.button
+			color: #fff
+			background-color: #000
+			font-size: 15px
+			padding: 10px 28px
+			display: inline-block
+			line-height: 1
+			border-bottom: 2px solid #ffea00
+			margin-top: 7%
+			transition: all .3s linear .01s 
+			&:hover
+				background-color: #ffea00
+				border-bottom: 2px solid #000
+				color: #000
+				transition: all .3s linear .01s 	
+			
+
+
+section h2
+	font-size: 35px
+	color: rgb( 66, 65, 71 )
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 27px
+	font-weight: normal
+	&+p
+		font-size: 24px
+		color: rgb( 66, 65, 71 )
+		line-height: 1.6
+		text-align: center
+		margin-bottom: 65px
+
+
+.content
+	text-align: center
+	padding-top: 90px
+	margin-bottom: 60px
+
+.content_items
+	margin: 0 auto
+	display: inline-block
+	overflow: hidden
+	&::after
+		content: ""
+		display: block
+		clear: both
+
+.item_wrap
+	width: 25%
+	float: left
+	margin: 0
+	padding: 0
+
+.item
+	text-align: center
+	padding: 0 26px
+	margin-bottom: 30px
+	display: inline-block
+	position: relative
+
+.item-hide
+	position: absolute
+	top: 0
+	opacity: 0
+	transition: all .2s linear 0s
+	&:hover
+		opacity: 1
+	.item_description
+		font-size: 20px
+		line-height: 23px
+		text-transform: uppercase
+		text-align: left
+		padding: 12px 50px 0 18px
+
+.item_header
+	position: relative
+	height: 200px
+	background-color: rgb( 255, 234, 0 );
+	overflow: hidden
+	h3
+		text-transform: uppercase
+		font-size: 20px
+		font-family: "Code"
+		text-align: center
+		line-height: 2
+		vertical-align: bottom
+		position: absolute
+		bottom: 0px
+		width: 100%
+		font-weight: normal
+
+	.item_icon_seo, .item_icon_webdev, .item_icon_webdes, .item_icon_graph
+		width: 100%
+		height: 100%
+		margin-top: -12px
+
+	.item_icon_seo
+		background: url("../img/graphic_design_icon.png") no-repeat center
+	.item_icon_webdev
+		background: url("../img/web_development.png") no-repeat center
+	.item_icon_webdes
+		background: url("../img/web_design_icon.png") no-repeat center
+	.item_icon_graph
+		background: url("../img/graphic_design_icon.png") no-repeat center
+
+
+.item_description
+	color: #fff
+	font-size: 13px
+	text-align: center
+	background-color: rgb( 65, 65, 70 )
+	width: 250px
+	height: 85px
+	left: 0
+	bottom: 0
+	display: table
+	p
+		display: table-cell
+		vertical-align: middle
+
+//section portfolio, our work
+
+.h2-wrap
+	margin-bottom: 32px
+	display: block
+	text-align: center
+	overflow: hidden
+	position: relative
+	&:after, &:before
+		position: absolute
+		top: 50%
+		content: ""
+		background-color: #cacaca
+		height: 1px
+		width: 100%
+	&:before
+		margin-left: -100%
+	h2
+		font-size: 18px
+		color: #ffea00
+		background-color: #424147
+		padding: 9px 28px 7px
+		border-bottom: 1px solid #4e4d53
+		margin: 0 35px
+		display: inline-block
+	&+p
+		text-align: center
+		font-size: 16px
+		margin-bottom: 35px
+
+
+// our work - portfolio
+.portfolio
+	text-align: center
+
+.masonry-grid
+	margin: 0 auto
+	padding-bottom: 90px
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+.masonry-item
+	float: left
+	min-width: 250px
+	max-width: 265px
+	height: 183px
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+
+// Our clients - cliets
+
+.carousel-clients
+	height: 65px
+	padding: 0 60px
+	margin: 0 47px
+	position: relative
+	margin-bottom: 120px
+	.slick-slide
+		line-height: 65px
+		background-color: #fff
+		margin: 0 0.4%
+		text-align: center
+		img
+			vertical-align: middle
+			display: inline
+
+.slick-prev, .slick-next
+	width: 46px
+	height: 65px
+	background-color: #000
+	&:before
+		content: ""
+		width: 100%
+		height: 100%
+		display: block
+	&:hover, &:focus
+		background: #000
+
+.slick-next
+	right: -47px
+	&:before
+		background: url("../img/slick-next.png") center no-repeat
+
+.slick-prev
+	left: -47px
+	&:before
+		background: url("../img/slick-prev.png") center no-repeat
+	
+
+
+// footer ------------------------------
+
+footer [class^="col-"]
+	float: left
+	padding: 0 1%
+
+.col-35
+	width: 35%
+
+.col-40
+	width: 40%
+	padding: 0 4%
+
+.col-25
+	width: 25%
+
+.footer-content
+	background-color: #414146
+	color: #fff
+	font-size: 13px
+	line-height: 21px
+	padding-bottom: 30px
+	h3
+		font-size: 18px
+		line-height: 4
+		font-weight: normal
+
+.learn-more
+	background-color: #000
+	font-size: 15px
+	padding: 11px 18px
+	display: inline-block
+	line-height: 1
+	border-bottom: 2px solid #ffea00
+	margin-top: 28px
+	transition: all .3s linear .01s 
+	&:hover
+		background-color: #ffea00
+		border-bottom: 2px solid #000
+		color: #000
+		transition: all .3s linear .01s 
+
+.photo-stream
+	.photo-stream_img
+		width: 33%
+		float: left
+		display: block
+		padding: 0 5px 5px 0
+
+.contacts
+	margin-top: 30px
+	li
+		list-style: none
+		padding-left: 45px
+		position: relative
+		margin-bottom: 15px
+		&:before
+			content: ""
+			display: block
+			height: 30px
+			width: 30px
+			position: absolute
+			left: 0
+			top: -5px
+	.adress
+		&:before	
+			background: url("../img/adress_icon.png")
+	.phone
+		div
+			display: inline-block
+			height: 100%
+			vertical-align: top
+		&:before	
+			background: url("../img/phone_icon.png")
+	.mail
+		color: #ffea00		
+		&:before
+			background: url("../img/mail_icon.png")
+		span
+			color: #fff
+
+
+
+
+
+.follow
+	margin-top: 15px
+	input
+		border: none
+		border-bottom: 2px solid #ffea00
+		background: none
+		color: #fff
+		padding-bottom: 3px
+		padding-left: 3px
+		font-size: 16px
+		line-height: 23px
+		float: left
+	.submit
+		height: 28px
+		width: 28px
+		display: inline-block
+		vertical-align: bottom
+		background-color: #000
+		background: url("../img/submit_icon.png")
+
+
+
+
+
+.footer-bottom
+	background-color: #000
+	color: #fff
+
+.copyright
+	margin-left: 1%
+	font-size: 14px
+	line-height: 70px
+	vertical-align: middle
+
+// MEDIA
+
+// @media screen and (max-width: 1280px) 
+// 	.carousel-clients
+// 		padding: 0 20px
+
+// @media screen and (max-width: 1170px) 
+// 	.item
+// 		padding: 0 10px
+// 	.item_description
+// 		width: 225px
+// 	.slider-main
+// 		img
+// 			width: auto
+// 			height: initial
+//@media screen and (max-width: 1200px)
+
+
+@media screen and (max-width: 992px)
+	.navigation
+		li+li
+			margin-left: 10px
+
+	.slider-main
+		height: 400px
+		.slick-slide
+			height: 400px
+		.slide-content
+			h1
+				font-size: 26px
+			.slide-description
+				p
+					font-size: 16px
+
+
+	.content_items
+		.item_wrap
+			width: 50%
+
+	footer [class^="col-"]
+		width: 100%
+		float: none
+		padding: 0 20px
+
+
+@media screen and (max-width: 768px)
+	.header
+		position: relative
+		height: 50px
+		line-height: 50px
+		.logo
+			line-height: 50px
+			img
+				height: 40px
+		.navigation
+			margin: 0
+			&:before
+				content: ""
+				display: block
+				clear: both
+			
+
+	.navigation-top
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background-color: #fff
+		z-index: 11
+
+	.navigation
+		margin-top: 0
+		float: none
+		li + li, li
+			margin-left: 0
+			float: none
+			display: block
+			text-align: center
+			a
+				padding: 0 15px
+				display: block
+				width: 100%
+				line-height: 40px
+
+
+	.toggle_menu
+		text-transform: uppercase
+		height: 30px
+		float: right
+		display: inline-block
+		margin: 10px 10px
+		padding: 5px 15px
+		background-color: #ffea00
+
+	.carousel-clients
+		padding: 0 30px	
+	
+	.slider-main .slide-content
+		width: 100%
+		text-align: center
+		margin: 10% 0 0 0
+
+
+
+	.content_items
+		.item_wrap
+			float: none
+			width: 100%
+
+
+
+
+
+// 	.item_wrap
+// 		width: 50%
+// 	.item
+// 		padding: 0 10px
+// 	.item_description
+// 		width: 275px
+// 	footer [class^="col-"]
+// 		float: none
+// 		width: 100%
+// 		padding: 0 30px
