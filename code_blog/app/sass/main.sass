@@ -1,0 +1,361 @@
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border: none
+
+body
+	color: #414141
+	background-image: url(../img/bg.jpg)
+	font-family: "HelveticaNeue"
+	line-height: 1.2
+
+
+
+header
+
+.brand
+	display: inline-block
+	margin-top: 22px
+	margin-bottom: 22px
+	&__logo
+		display: none
+	&__description
+		display: inline-block
+		text-transform: uppercase
+		color: #e8603c
+		font-size: 36px
+		line-height: 1
+		font-weight: normal
+		margin: 0
+
+
+.button-collapse
+		display: none
+nav
+	margin-top: 35px
+	float: right
+	
+	ul
+		margin: 0
+		padding: 0
+		li
+			margin: 0
+			padding: 0
+			margin-left: 18px
+			float: left
+			list-style-type: none
+			a
+				text-transform: uppercase
+				text-decoration: none
+				color: #b9b9b9
+				font-size: 16px
+				line-height: 1
+				font-family: "Bebas"
+				&:hover
+					text-decoration: none
+					color: #e8603c
+		.active
+			a
+				color: #e8603c
+
+
+.page-title
+	line-height: 60px
+	text-transform: uppercase
+	color: #fff
+	background-color: #e8603c
+	font-size: 24px
+	padding-left: 19px
+	margin-bottom: 24px
+	border-right: 10px solid #fff
+	border-left: 10px solid #fff
+	box-sizing: content-box
+
+.bg-light
+	background-color: #f3b29d
+
+
+.entry
+	position: relative
+	margin-bottom: 56px
+	&__cat
+		position: absolute
+		top: 0
+		right: 100%
+		margin-right: 10px
+		background-color: #e8603c
+		width: 75px
+		height: 75px
+		line-height: 75px
+		text-align: center
+		z-index: 10
+		img
+			vertical-align: middle
+	&__thumbnail
+		margin-bottom: 23px
+		img
+			width: 100%
+			height: auto
+	&__meta
+		width: 147px
+		float: left
+	&__content
+		margin-left: 147px
+		h2
+			text-transform: uppercase
+			margin: 0
+			margin-bottom: 18px
+			a
+				color: #e8603c
+				font-size: 18px
+				text-decoration: none
+				line-height: 1
+				vertical-align: top
+			.entry-under
+				color: #a0a0a0
+				font-size: 12px
+				text-decoration: none
+				text-transform: none
+				font-family: "HelveticaNeue"
+		p:last-child:after
+			content: "..."
+			margin-left: 3px
+	&__content-full
+		margin: 0
+	&__underline
+		margin-top: 50px
+
+
+.meta
+	margin-bottom: 15px
+	font-size: 12px
+	&__title
+		color: #e8603c
+		text-transform: uppercase
+		margin-bottom: 10px
+		font-family: "Bebas"
+	&__info
+		color: #bababa
+		font-family: "HelveticaNeue Bold"
+	&__info-date
+
+.pagesSwitch
+	&__count
+		color: #fff
+		font-family: "Bebas"
+		font-size: 14px
+		background-color: #f3b29d
+		width: 26px
+		line-height: 26px
+		text-align: center
+		vertical-align: middle
+		float: left
+		margin: 0 2px
+		text-decoration: none
+		&:hover
+			background-color: #e8663c
+	&__count-active
+		background-color: #e8663c
+
+
+.quote
+	position: relative
+	background-color: #f1f1f1
+	padding: 25px 75px
+	font-family: "HelveticaNeue Italic"
+	font-style: italic
+	font-size: 13px
+	line-height: 18px
+	&:before
+		position: absolute
+		top: 21px
+		left: 32px
+		background: url(../img/quote.png) no-repeat
+		content: ""
+		display: block
+		width: 26px
+		height: 22px
+		
+
+
+
+// sidebar
+
+.widgetSide
+	margin-bottom: 35px
+	&__header
+		line-height: 1
+		font-size: 14px
+		color: #e8603c
+		text-transform: uppercase
+		margin-bottom: 20px
+		font-family: "Bebas"
+		span
+			background-color: #fff
+			padding-right: 17px
+	&__content
+		font-size: 12px
+	ul
+		list-style: none
+		li
+			a
+				color: inherit
+				text-decoration: none
+
+
+
+
+.bg-line
+	background: url(../img/line.png) repeat-x
+	min-height: 14px
+
+.gallery
+	img
+		width: 50px
+		height: 50px
+		margin: 0 6px 5px 0
+		float: left
+		display: block
+		border: 1px solid #e8603c
+		background-color: #f3af9d
+		&:nth-child(4n)
+			margin: 0
+
+
+
+
+
+
+
+
+
+
+// footer
+
+.footer
+	background-color: #f3b29d
+
+.footer-wrap
+	padding-top: 35px
+	padding-bottom: 75px
+	background-color: #e8663c
+	border-right: 10px solid #fff
+	border-left: 10px solid #fff
+	box-sizing: content-box
+	&:after
+		content: ""
+		clear: both
+		display: block
+		
+
+.widgetBot
+	width: 33.33%
+	float: left
+	color: #fff
+	padding-left: 35px
+	&__header
+		font-size: 20px
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 28px
+	&__content
+		font-size: 12px
+		p
+			margin-bottom: 13px
+
+
+
+.twitterPost
+	font-family: "HelveticaNeue Light"	
+	margin-bottom: 16px
+	&__post
+		margin-bottom: 6px
+		a
+			color: inherit
+			text-decoration: none
+	&__date
+
+
+
+
+
+
+
+
+
+
+//  GRID
+
+.container , .footer-wrap, .content-wrap
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+	&:after
+		clear: both
+		content: ""
+		display: block
+
+.content-wrap
+	margin-bottom: 41px
+
+
+
+
+.col-12
+	width: 100%
+	padding: 0 10px
+.col-9
+	width: 75%
+	float: left
+	padding: 0 10px
+.col-3
+	float: left
+	width: 25%
+	padding: 0 10px
+
+
+
+
+
+
+
+// TYPOGRAPHY
+
+p
+	margin-bottom: 23px
+	font-size: 12px
+
+
+.tw-link, .twitterPost__date
+	color: #f3b29d
+
+.color-light
+	color: #f3af9d
+
+
+
+h1,h2,h3,h4
+	font-family: "Bebas"
+
+
+
+
+.slider
+	position: relative
+	.slide-arrow
+		position: absolute
+		top: 50%
+		margin-top: -26px
+		width: 36px
+		height: 52px
+		z-index: 10
+	.slide-arrow-left
+		left: 18px
+		background-image: url(../img/arrow-left.png)
+		
+	.slide-arrow-right
+		right: 18px
+		background-image: url(../img/arrow-right.png)
+		

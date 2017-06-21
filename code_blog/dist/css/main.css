@@ -1,0 +1,406 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  color: #414141;
+  background-image: url(../img/bg.jpg);
+  font-family: "HelveticaNeue";
+  line-height: 1.2;
+}
+
+.brand {
+  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.brand__logo {
+  display: none;
+}
+
+.brand__description {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #e8603c;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: normal;
+  margin: 0;
+}
+
+.button-collapse {
+  display: none;
+}
+
+nav {
+  margin-top: 35px;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+  float: left;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #b9b9b9;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Bebas";
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #e8603c;
+}
+
+nav ul .active a {
+  color: #e8603c;
+}
+
+.page-title {
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #e8603c;
+  font-size: 24px;
+  padding-left: 19px;
+  margin-bottom: 24px;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.bg-light {
+  background-color: #f3b29d;
+}
+
+.entry {
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.entry__cat {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-right: 10px;
+  background-color: #e8603c;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  z-index: 10;
+}
+
+.entry__cat img {
+  vertical-align: middle;
+}
+
+.entry__thumbnail {
+  margin-bottom: 23px;
+}
+
+.entry__thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.entry__meta {
+  width: 147px;
+  float: left;
+}
+
+.entry__content {
+  margin-left: 147px;
+}
+
+.entry__content h2 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.entry__content h2 a {
+  color: #e8603c;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1;
+  vertical-align: top;
+}
+
+.entry__content h2 .entry-under {
+  color: #a0a0a0;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "HelveticaNeue";
+}
+
+.entry__content p:last-child:after {
+  content: "...";
+  margin-left: 3px;
+}
+
+.entry__content-full {
+  margin: 0;
+}
+
+.entry__underline {
+  margin-top: 50px;
+}
+
+.meta {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.meta__title {
+  color: #e8603c;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: "Bebas";
+}
+
+.meta__info {
+  color: #bababa;
+  font-family: "HelveticaNeue Bold";
+}
+
+.pagesSwitch__count {
+  color: #fff;
+  font-family: "Bebas";
+  font-size: 14px;
+  background-color: #f3b29d;
+  width: 26px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+  margin: 0 2px;
+  text-decoration: none;
+}
+
+.pagesSwitch__count:hover {
+  background-color: #e8663c;
+}
+
+.pagesSwitch__count-active {
+  background-color: #e8663c;
+}
+
+.quote {
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 25px 75px;
+  font-family: "HelveticaNeue Italic";
+  font-style: italic;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.quote:before {
+  position: absolute;
+  top: 21px;
+  left: 32px;
+  background: url(../img/quote.png) no-repeat;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 22px;
+}
+
+.widgetSide {
+  margin-bottom: 35px;
+}
+
+.widgetSide__header {
+  line-height: 1;
+  font-size: 14px;
+  color: #e8603c;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Bebas";
+}
+
+.widgetSide__header span {
+  background-color: #fff;
+  padding-right: 17px;
+}
+
+.widgetSide__content {
+  font-size: 12px;
+}
+
+.widgetSide ul {
+  list-style: none;
+}
+
+.widgetSide ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bg-line {
+  background: url(../img/line.png) repeat-x;
+  min-height: 14px;
+}
+
+.gallery img {
+  width: 50px;
+  height: 50px;
+  margin: 0 6px 5px 0;
+  float: left;
+  display: block;
+  border: 1px solid #e8603c;
+  background-color: #f3af9d;
+}
+
+.gallery img:nth-child(4n) {
+  margin: 0;
+}
+
+.footer {
+  background-color: #f3b29d;
+}
+
+.footer-wrap {
+  padding-top: 35px;
+  padding-bottom: 75px;
+  background-color: #e8663c;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.footer-wrap:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.widgetBot {
+  width: 33.33%;
+  float: left;
+  color: #fff;
+  padding-left: 35px;
+}
+
+.widgetBot__header {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+.widgetBot__content {
+  font-size: 12px;
+}
+
+.widgetBot__content p {
+  margin-bottom: 13px;
+}
+
+.twitterPost {
+  font-family: "HelveticaNeue Light";
+  margin-bottom: 16px;
+}
+
+.twitterPost__post {
+  margin-bottom: 6px;
+}
+
+.twitterPost__post a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container, .footer-wrap, .content-wrap {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:after, .footer-wrap:after, .content-wrap:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.content-wrap {
+  margin-bottom: 41px;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.col-9 {
+  width: 75%;
+  float: left;
+  padding: 0 10px;
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+p {
+  margin-bottom: 23px;
+  font-size: 12px;
+}
+
+.tw-link, .twitterPost__date {
+  color: #f3b29d;
+}
+
+.color-light {
+  color: #f3af9d;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bebas";
+}
+
+.slider {
+  position: relative;
+}
+
+.slider .slide-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -26px;
+  width: 36px;
+  height: 52px;
+  z-index: 10;
+}
+
+.slider .slide-arrow-left {
+  left: 18px;
+  background-image: url(../img/arrow-left.png);
+}
+
+.slider .slide-arrow-right {
+  right: 18px;
+  background-image: url(../img/arrow-right.png);
+}
